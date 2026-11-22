@@ -40,9 +40,12 @@ SKILL.md                  ← the design system this site follows
 | Work grid and video popup | Expandable Card |
 | Services | Bento Grid |
 | Process | Timeline |
-| Testimonials | Card Stack |
 | Contact background | Background Beams |
 | Floating contact button | Custom (Motion + CSS animations) |
+| Testimonials | Animated Testimonials |
+| Footer | Custom editing-timeline animation (CSS) |
+| Cursor | Custom viewfinder follower (`ui/editor-cursor.tsx`) |
+| Scroll animations | `ui/scroll-motion.tsx` (word reveals, rise-ins, parallax, progress bar) |
 
 ## Adding a video
 

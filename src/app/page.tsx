@@ -10,6 +10,7 @@ import { Contact } from "@/components/sections/contact";
 import { Footer } from "@/components/sections/footer";
 import { ContactButton } from "@/components/sections/contact-button";
 import { ScrollProgress } from "@/components/ui/scroll-motion";
+import { EditorCursor } from "@/components/ui/editor-cursor";
 
 // The whole page, top to bottom. Reorder or remove sections here.
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
       </main>
       <Footer />
       <ContactButton />
+      <EditorCursor />
     </>
   );
 }

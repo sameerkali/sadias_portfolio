@@ -147,6 +147,7 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
               type="button"
               layoutId={`card-${item.id}-${id}`}
               aria-haspopup="dialog"
+              data-cursor="play"
               onClick={(e) => {
                 triggerRef.current = e.currentTarget;
                 setActive(item);
