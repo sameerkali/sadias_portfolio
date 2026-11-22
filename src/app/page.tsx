@@ -7,13 +7,15 @@ import { Process } from "@/components/sections/process";
 import { About } from "@/components/sections/about";
 import { Testimonials } from "@/components/sections/testimonials";
 import { Contact } from "@/components/sections/contact";
-// import { Footer } from "@/components/sections/footer";
+import { Footer } from "@/components/sections/footer";
 import { ContactButton } from "@/components/sections/contact-button";
+import { ScrollProgress } from "@/components/ui/scroll-motion";
 
 // The whole page, top to bottom. Reorder or remove sections here.
 export default function Home() {
   return (
     <>
+      <ScrollProgress />
       <Header />
       <main id="main" tabIndex={-1} className="outline-none">
         <Hero />
@@ -25,7 +27,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
       </main>
-      {/* <Footer /> */}
+      <Footer />
       <ContactButton />
     </>
   );

@@ -22,7 +22,9 @@ export const site = {
   email: "hello@sadiaedits.com", // DUMMY
   phone: "+91 98204 61735", // DUMMY
   whatsapp: "919820461735", // DUMMY. Country code + number, digits only. Both "Hire me" buttons open this chat.
-  whatsappMessage: "Hi Sadia! I'd like to hire you for a video project.", // pre-filled first message
+  // Pre-filled WhatsApp message. "\n" = new line. The client fills in the blanks before sending.
+  whatsappMessage:
+    "Hi Sadia! I saw your portfolio and I'd like to hire you.\n\nType of video: \nNumber of videos: \nDeadline: ",
   availability: "Booking projects for December", // DUMMY
 };
 
@@ -218,7 +220,10 @@ export const about = {
 
 /* ---------------- Testimonials (DUMMY, replace with real quotes) ---------------- */
 
-export const testimonials = [
+// Add photo: "/images/clients/name.jpg" to show a photo instead of the initials tile.
+export type Testimonial = { quote: string; name: string; title: string; photo?: string };
+
+export const testimonials: Testimonial[] = [
   {
     quote: "She turned four hours of wedding footage into a 30-second reel the couple posted the same night.",
     name: "Farhan Qureshi",

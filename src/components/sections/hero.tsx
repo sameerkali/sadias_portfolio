@@ -1,6 +1,7 @@
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { FlipWords } from "@/components/ui/flip-words";
 import { HeroReels } from "@/components/sections/hero-reels";
+import { Parallax } from "@/components/ui/scroll-motion";
 import { hero, work } from "@/data/site";
 
 // Spotlight beams tinted with the theme accent (theme.css).
@@ -31,7 +32,9 @@ export function Hero() {
           <p className="mt-6 max-w-[46ch] text-2xl leading-relaxed text-fg-muted">{hero.subtext}</p>
         </div>
 
-        <HeroReels center={center} left={left} right={right} />
+        <Parallax offset={60}>
+          <HeroReels center={center} left={left} right={right} />
+        </Parallax>
       </div>
     </section>
   );

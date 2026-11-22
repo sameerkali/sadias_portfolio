@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { IconBrandInstagram, IconBrandTiktok, IconBrandYoutube } from "@tabler/icons-react";
+import { RevealText } from "@/components/ui/scroll-motion";
 import { sections, services } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -11,13 +12,12 @@ export function Services() {
   return (
     <section id="services" aria-labelledby="services-title" className="gradient-services scroll-mt-8 bg-surface-muted py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 id="services-title" className="mb-12 text-display font-semibold tracking-tight">
-          {sections.services.title}
-        </h2>
+        <RevealText id="services-title" text={sections.services.title} className="mb-12 text-display font-semibold tracking-tight" />
         <BentoGrid>
           {services.map((s, i) => (
             <BentoGridItem
               key={s.title}
+              delay={i * 0.12}
               title={s.title}
               description={s.description}
               className={cn(spans[i], !s.image && "bg-accent text-fg-on-accent")}

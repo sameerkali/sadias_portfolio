@@ -1,6 +1,7 @@
 // Aceternity UI: Bento Grid (https://ui.aceternity.com/components/bento-grid)
-// Adapted: design tokens, semantic list, optional background header.
+// Adapted: design tokens, semantic list, optional background header, cells rise in on scroll.
 import { cn } from "@/lib/utils";
+import { Reveal } from "@/components/ui/scroll-motion";
 
 export const BentoGrid = ({ className, children }: { className?: string; children?: React.ReactNode }) => {
   return (
@@ -15,14 +16,18 @@ export const BentoGridItem = ({
   title,
   description,
   header,
+  delay = 0,
 }: {
   className?: string;
+  delay?: number;
   title?: React.ReactNode;
   description?: React.ReactNode;
   header?: React.ReactNode;
 }) => {
   return (
-    <li
+    <Reveal
+      as="li"
+      delay={delay}
       className={cn(
         "group/bento relative row-span-1 flex min-h-64 flex-col justify-end overflow-hidden rounded-2xl bg-surface-raised p-6",
         className,
@@ -33,6 +38,6 @@ export const BentoGridItem = ({
         <h3 className="mb-2 text-2xl font-semibold">{title}</h3>
         <p className="max-w-sm text-lg opacity-85">{description}</p>
       </div>
-    </li>
+    </Reveal>
   );
 };

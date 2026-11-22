@@ -3,6 +3,7 @@
 // Adapted: heading via props, accent-colored progress line, re-measures on resize, semantic list.
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { Reveal, RevealText } from "@/components/ui/scroll-motion";
 
 interface TimelineEntry {
   title: string;
@@ -40,8 +41,10 @@ export const Timeline = ({
   return (
     <div className="w-full" ref={containerRef}>
       <div className="mx-auto max-w-7xl px-6 pt-24">
-        <h2 className="text-display font-semibold tracking-tight">{title}</h2>
-        <p className="mt-4 max-w-xl text-2xl text-fg-muted">{description}</p>
+        <RevealText text={title} className="text-display font-semibold tracking-tight" />
+        <Reveal as="p" delay={0.15} className="mt-4 max-w-xl text-2xl text-fg-muted">
+          {description}
+        </Reveal>
       </div>
 
       <div className="relative mx-auto max-w-7xl px-6 pb-20">
@@ -57,7 +60,7 @@ export const Timeline = ({
 
             <div className="relative w-full pr-6 pl-20 md:pl-4">
               <h3 className="mb-4 block text-left text-3xl font-bold text-fg-muted md:hidden">{item.title}</h3>
-              {item.content}
+              <Reveal>{item.content}</Reveal>
             </div>
           </li>
         ))}

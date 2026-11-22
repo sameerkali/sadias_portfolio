@@ -120,6 +120,11 @@ html.light {
 @utility gradient-testimonials {
   background-image: linear-gradient(135deg, var(--glow-1), transparent 45%, transparent 60%, var(--glow-2));
 }
+@utility gradient-footer {
+  background-image:
+    radial-gradient(40% 80% at 50% 50%, var(--glow-2), transparent 70%),
+    radial-gradient(60% 100% at 50% 0%, var(--glow-1), transparent 70%);
+}
 @utility gradient-contact {
   background-image:
     radial-gradient(70% 60% at 50% 110%, color-mix(in oklch, var(--color-accent) 22%, transparent), transparent 70%),

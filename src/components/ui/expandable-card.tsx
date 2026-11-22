@@ -134,8 +134,15 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
 
       {/* Mobile: swipeable row. Desktop: 5 columns with a staggered rhythm. */}
       <ul className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-6 lg:mx-0 lg:grid lg:grid-cols-5 lg:gap-5 lg:overflow-visible lg:px-0">
-        {items.map((item) => (
-          <li key={item.id} className="w-[68vw] max-w-[280px] shrink-0 snap-center lg:w-auto lg:max-w-none lg:even:mt-20">
+        {items.map((item, i) => (
+          <motion.li
+            key={item.id}
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.7, delay: i * 0.1, ease: [0.16, 1, 0.3, 1] }}
+            className="w-[68vw] max-w-[280px] shrink-0 snap-center lg:w-auto lg:max-w-none lg:even:mt-20"
+          >
             <motion.button
               type="button"
               layoutId={`card-${item.id}-${id}`}
@@ -176,7 +183,7 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
                 </span>
               </span>
             </motion.button>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </>
