@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+/* Dark-only site: Aceternity's `dark:` classes always apply (<html class="dark">). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Design tokens from SKILL.md (Motion design system).
+  Use these names in components (bg-surface, text-fg, text-accent...), never raw hex.
+*/
+@theme {
+  --font-sans: var(--font-tasa), sans-serif;
+
+  /* color.text.* */
+  --color-fg: oklch(0.94 0.008 96); /* primary */
+  --color-fg-muted: oklch(0.69 0.012 148); /* secondary, 7:1+ on black */
+  --color-fg-on-accent: #1a1a1c; /* tertiary, text on yellow */
+  --color-fg-subtle: #6e6a64; /* inverse, decorative only (under 4.5:1) */
+
+  /* color.surface.* */
+  --color-surface: #000000;
+  --color-surface-muted: #080808;
+  --color-surface-raised: #141214;
+  --color-accent: oklch(0.88 0.18 96); /* surface.strong, the yellow */
+  --color-line: oklch(0.94 0.008 96 / 0.12);
+
+  /* font.size.* (2xs..4xl from the system, display added for hero/section titles) */
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-md: 13px;
+  --text-lg: 15px;
+  --text-xl: 16px;
+  --text-2xl: 20px;
+  --text-3xl: 30px;
+  --text-4xl: 34px;
+  --text-display: clamp(2.5rem, 4vw + 1rem, 4.25rem);
+  --text-display--line-height: 1.05;
+
+  /* radius.* */
+  --radius-xs: 3px;
+  --radius-pill: 50px;
+
+  /* motion.duration.* */
+  --default-transition-duration: 160ms;
+  --duration-instant: 140ms;
+  --duration-fast: 150ms;
+  --duration-slow: 180ms;
+  --duration-slower: 200ms;
+
+  /* Infinite Moving Cards (Aceternity) */
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-fg);
+  font-size: var(--text-xl);
+}
+
+/* Visible focus on everything keyboard-reachable. */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-xs);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-fg-on-accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-scroll {
+    animation: none;
+  }
+  .scroller {
+    overflow-x: auto;
+    mask-image: none;
+  }
+  .scroller li[aria-hidden="true"] {
+    display: none;
+  }
+}
