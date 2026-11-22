@@ -8,7 +8,7 @@ Search the project for `DUMMY` and `TODO` to find every spot.
 - [ ] Full name: `site.name` (currently "Sadia Khan")
 - [ ] Email: `site.email`
 - [ ] Phone: `site.phone`
-- [ ] WhatsApp link: the `wa.me/...` number in `socials`
+- [ ] WhatsApp number: `site.whatsapp` (both "Hire me" buttons open this chat) and `site.whatsappMessage`
 - [ ] Instagram / YouTube / TikTok links in `socials` (currently `yourhandle`)
 - [ ] Availability line: `site.availability`
 - [ ] Your domain: `site.url` (used for SEO / link previews)

@@ -9,7 +9,7 @@ const accent = (pct: number) => `color-mix(in oklch, var(--color-accent) ${pct}%
 export function Hero() {
   const [center, left, right] = [work[0], work[3], work[1]];
   return (
-    <section className="relative flex min-h-dvh items-center overflow-hidden">
+    <section className="gradient-hero relative flex min-h-dvh items-center overflow-hidden">
       <Spotlight
         gradientFirst={`radial-gradient(68.54% 68.72% at 55.02% 31.46%, ${accent(10)} 0, ${accent(3)} 50%, transparent 80%)`}
         gradientSecond={`radial-gradient(50% 50% at 50% 50%, ${accent(7)} 0, ${accent(2)} 80%, transparent 100%)`}

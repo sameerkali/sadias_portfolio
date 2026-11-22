@@ -79,4 +79,49 @@ html.light {
 /* Derived from the colors above, no need to edit. */
 @theme {
   --color-line: color-mix(in oklch, var(--color-fg) 12%, transparent);
+  --glow-1: color-mix(in oklch, var(--color-accent) 16%, transparent); /* purple tint */
+  --glow-2: color-mix(in oklch, var(--color-accent-2) 12%, transparent); /* cyan tint */
+}
+
+/*
+  Section background gradients, one per section, all built from accent + accent-2.
+  They follow the active scheme and light/dark mode automatically.
+  Make one stronger or softer by changing its % stops, or move it with the "at x% y%" part.
+*/
+@utility gradient-hero {
+  background-image:
+    radial-gradient(45% 55% at 0% 0%, var(--glow-1), transparent 70%),
+    radial-gradient(45% 50% at 92% 65%, var(--glow-2), transparent 70%);
+}
+@utility gradient-featured {
+  background-image:
+    radial-gradient(62% 42% at 50% 64%, color-mix(in oklch, var(--color-accent) 32%, transparent), transparent 75%),
+    radial-gradient(28% 32% at 90% 72%, color-mix(in oklch, var(--color-accent-2) 26%, transparent), transparent 70%),
+    radial-gradient(28% 32% at 10% 52%, color-mix(in oklch, var(--color-accent-2) 20%, transparent), transparent 70%);
+}
+@utility gradient-work {
+  background-image:
+    radial-gradient(40% 50% at 100% 30%, var(--glow-1), transparent 70%),
+    radial-gradient(35% 45% at 0% 85%, var(--glow-2), transparent 70%);
+}
+@utility gradient-services {
+  background-image:
+    radial-gradient(45% 50% at 100% 0%, var(--glow-1), transparent 70%),
+    radial-gradient(40% 50% at 0% 100%, var(--glow-2), transparent 70%);
+}
+@utility gradient-process {
+  background-image:
+    radial-gradient(35% 40% at 0% 45%, var(--glow-2), transparent 70%),
+    radial-gradient(40% 35% at 90% 40%, var(--glow-1), transparent 70%);
+}
+@utility gradient-about {
+  background-image: radial-gradient(40% 60% at 18% 50%, var(--glow-1), transparent 70%);
+}
+@utility gradient-testimonials {
+  background-image: linear-gradient(135deg, var(--glow-1), transparent 45%, transparent 60%, var(--glow-2));
+}
+@utility gradient-contact {
+  background-image:
+    radial-gradient(70% 60% at 50% 110%, color-mix(in oklch, var(--color-accent) 22%, transparent), transparent 70%),
+    radial-gradient(35% 35% at 50% 105%, color-mix(in oklch, var(--color-accent-2) 16%, transparent), transparent 70%);
 }

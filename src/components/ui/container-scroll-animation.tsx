@@ -1,6 +1,6 @@
 "use client";
 // Aceternity UI: Container Scroll Animation (https://ui.aceternity.com/components/container-scroll-animation)
-// Adapted: design tokens, flat card under reduced motion, matchMedia instead of resize math.
+// Adapted: frameless card, design tokens, flat under reduced motion, matchMedia instead of resize math.
 import React, { useRef } from "react";
 import { useScroll, useTransform, motion, useReducedMotion } from "motion/react";
 
@@ -36,9 +36,9 @@ export const ContainerScroll = ({
         </motion.div>
         <motion.div
           style={{ rotateX: rotate, scale }}
-          className="mx-auto -mt-12 aspect-video w-full max-w-5xl rounded-[30px] bg-surface-raised p-2 shadow-2xl shadow-shadow/60 md:p-4"
+          className="mx-auto -mt-12 aspect-video w-full max-w-5xl overflow-hidden rounded-3xl bg-surface-muted shadow-2xl shadow-shadow/60"
         >
-          <div className="h-full w-full overflow-hidden rounded-2xl bg-surface-muted">{children}</div>
+          {children}
         </motion.div>
       </div>
     </div>

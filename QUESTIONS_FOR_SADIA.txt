@@ -54,17 +54,22 @@ Where it says "Currently:", that is what the site shows now.
 2.2  Phone number to show? (or say "don't show")
      Answer:
 
-2.3  WhatsApp number for the WhatsApp button? (can be the same as above)
+2.3  WhatsApp number? Both "Hire me" buttons open a WhatsApp chat with you,
+     so this matters most. (can be the same as above)
      Answer:
 
 2.4  How do you prefer clients contact you first? (email / WhatsApp / Instagram DM)
      Answer:
 
-2.5  How fast do you usually reply?
+2.5  When a client taps "Hire me", WhatsApp opens with this message ready to send:
+     "Hi Sadia! I'd like to hire you for a video project."  Want different wording?
+     Answer:
+
+2.6  How fast do you usually reply?
      Currently: "I reply within a day"
      Answer:
 
-2.6  Are you taking new projects right now? From when?
+2.7  Are you taking new projects right now? From when?
      Currently: "Booking projects for December"
      Answer:
 

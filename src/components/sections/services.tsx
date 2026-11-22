@@ -9,7 +9,7 @@ const spans = ["md:col-span-2", "", "", "md:col-span-2"];
 
 export function Services() {
   return (
-    <section id="services" aria-labelledby="services-title" className="scroll-mt-8 bg-surface-muted py-24 md:py-32">
+    <section id="services" aria-labelledby="services-title" className="gradient-services scroll-mt-8 bg-surface-muted py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <h2 id="services-title" className="mb-12 text-display font-semibold tracking-tight">
           {sections.services.title}

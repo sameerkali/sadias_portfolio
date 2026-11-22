@@ -3,7 +3,7 @@ import { process } from "@/data/site";
 
 export function Process() {
   return (
-    <section id="process" aria-label="Process" className="scroll-mt-8">
+    <section id="process" aria-label="Process" className="gradient-process scroll-mt-8">
       <Timeline
         title={process.title}
         description={process.description}

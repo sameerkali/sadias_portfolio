@@ -3,7 +3,7 @@ import { about } from "@/data/site";
 
 export function About() {
   return (
-    <section id="about" aria-labelledby="about-title" className="scroll-mt-8 py-24 md:py-32">
+    <section id="about" aria-labelledby="about-title" className="gradient-about scroll-mt-8 py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl px-6 items-center gap-12 md:grid-cols-[2fr_3fr] md:gap-20">
         {/* TODO: replace with <Image src="/images/sadia.jpg" alt={about.photoAlt} ... /> */}
         <Placeholder label="Your photo (4:5)" className="aspect-[4/5] w-full max-w-md rounded-3xl" />

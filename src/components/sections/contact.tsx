@@ -1,19 +1,22 @@
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { ButtonLink } from "@/components/ui/button-link";
-import { contact, ctaLabel, site, socials } from "@/data/site";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
+import { contact, ctaLabel, hireUrl, site, socials } from "@/data/site";
 
 // No form on purpose: the site is 100% static, so contact goes through email / WhatsApp links.
 export function Contact() {
   return (
-    <section id="contact" aria-labelledby="contact-title" className="relative scroll-mt-8 overflow-hidden">
+    <section id="contact" aria-labelledby="contact-title" className="gradient-contact relative scroll-mt-8 overflow-hidden">
       <BackgroundBeams />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center md:py-40">
         <h2 id="contact-title" className="text-display font-semibold tracking-tight">
           {contact.title}
         </h2>
         <p className="mt-6 max-w-xl text-2xl text-fg-muted">{contact.text}</p>
-        <ButtonLink href={`mailto:${site.email}?subject=${encodeURIComponent(contact.mailSubject)}`} className="mt-10">
+        <ButtonLink href={hireUrl} newTab className="mt-10">
+          <IconBrandWhatsapp aria-hidden="true" stroke={1.75} className="h-5 w-5" />
           {ctaLabel}
+          <span className="sr-only"> on WhatsApp (opens in a new tab)</span>
         </ButtonLink>
 
         <p className="mt-8 text-xl">

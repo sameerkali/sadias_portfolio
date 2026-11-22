@@ -21,17 +21,20 @@ export const site = {
   url: "https://sadia-portfolio.example.com", // DUMMY, your real domain
   email: "hello@sadiaedits.com", // DUMMY
   phone: "+91 98204 61735", // DUMMY
+  whatsapp: "919820461735", // DUMMY. Country code + number, digits only. Both "Hire me" buttons open this chat.
+  whatsappMessage: "Hi Sadia! I'd like to hire you for a video project.", // pre-filled first message
   availability: "Booking projects for December", // DUMMY
 };
 
-// Label of the floating contact button and the email button in the Contact section.
+// Label of the floating button and the Contact-section button. Both open WhatsApp.
 export const ctaLabel = "Hire me";
+export const hireUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(site.whatsappMessage)}`;
 
 export const socials = [
   { label: "Instagram", href: "https://instagram.com/yourhandle", icon: IconBrandInstagram }, // DUMMY
   { label: "YouTube", href: "https://youtube.com/@yourhandle", icon: IconBrandYoutube }, // DUMMY
   { label: "TikTok", href: "https://tiktok.com/@yourhandle", icon: IconBrandTiktok }, // DUMMY
-  { label: "WhatsApp", href: "https://wa.me/919820461735", icon: IconBrandWhatsapp }, // DUMMY
+  { label: "WhatsApp", href: `https://wa.me/${site.whatsapp}`, icon: IconBrandWhatsapp },
   { label: "Email", href: `mailto:${site.email}`, icon: IconMail },
 ];
 
@@ -248,5 +251,4 @@ export const testimonials = [
 export const contact = {
   title: "Have footage sitting on your drive?",
   text: "Send it over. I reply within a day with ideas, a price and a delivery date.",
-  mailSubject: "New video project",
 };

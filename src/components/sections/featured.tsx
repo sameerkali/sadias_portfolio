@@ -1,10 +1,12 @@
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import { AutoplayVideo } from "@/components/ui/autoplay-video";
 import { featured } from "@/data/site";
 
-// The horizontal clip in a frame that tilts flat as you scroll (Aceternity Container Scroll).
+// The horizontal clip in a frame that tilts flat as you scroll (Aceternity Container Scroll),
+// over a purple/cyan glow. No timeline or player controls, only a pause button.
 export function Featured() {
   return (
-    <section aria-labelledby="featured-title" className="overflow-hidden">
+    <section aria-labelledby="featured-title" className="gradient-featured overflow-hidden">
       <ContainerScroll
         titleComponent={
           <div className="mb-16 px-6">
@@ -15,19 +17,7 @@ export function Featured() {
           </div>
         }
       >
-        {/* Native controls let visitors pause or unmute. */}
-        <video
-          src={featured.src}
-          poster={featured.poster}
-          autoPlay
-          muted
-          loop
-          playsInline
-          controls
-          preload="metadata"
-          aria-label={featured.title}
-          className="h-full w-full object-cover"
-        />
+        <AutoplayVideo src={featured.src} poster={featured.poster} label={featured.title} />
       </ContainerScroll>
     </section>
   );

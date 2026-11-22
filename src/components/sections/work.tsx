@@ -3,7 +3,7 @@ import { sections, work } from "@/data/site";
 
 export function Work() {
   return (
-    <section id="work" aria-labelledby="work-title" className="scroll-mt-8 py-24 md:py-32">
+    <section id="work" aria-labelledby="work-title" className="gradient-work scroll-mt-8 py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
         <h2 id="work-title" className="text-display font-semibold tracking-tight">
           {sections.work.title}
