@@ -8,7 +8,7 @@ export function Placeholder({ label, className }: { label: string; className?: s
       role="img"
       aria-label={label}
       className={cn(
-        "flex flex-col items-center justify-center gap-3 border border-dashed border-line bg-surface-raised text-fg-muted",
+        "flex flex-col items-center justify-center gap-3 bg-surface-raised text-fg-muted",
         className,
       )}
     >

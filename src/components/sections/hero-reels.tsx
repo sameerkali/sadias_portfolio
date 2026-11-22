@@ -36,7 +36,7 @@ export function HeroReels({ center, left, right }: { center: Video; left: Video;
           initial={{ opacity: 0, y: 60, rotate: 0 }}
           animate={{ opacity: 0.6, y: 0, rotate }}
           transition={{ ...spring, delay: 0.25 + i * 0.1 }}
-          className={`absolute top-14 ${side} hidden aspect-[9/16] w-[190px] overflow-hidden rounded-[24px] border-4 border-surface-raised sm:block`}
+          className={`absolute top-14 ${side} hidden aspect-[9/16] w-[190px] overflow-hidden rounded-[24px] sm:block`}
         >
           <Image src={v.poster} alt="" fill sizes="190px" className="object-cover" />
         </motion.div>
@@ -46,7 +46,7 @@ export function HeroReels({ center, left, right }: { center: Video; left: Video;
         initial={{ opacity: 0, y: 40, scale: 0.96 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ ...spring, delay: 0.1 }}
-        className="relative z-10 mx-auto aspect-[9/16] w-[250px] overflow-hidden rounded-[30px] border-4 border-surface-raised bg-surface-raised shadow-2xl shadow-black sm:w-[290px]"
+        className="relative z-10 mx-auto aspect-[9/16] w-[250px] overflow-hidden rounded-[30px] bg-surface-raised shadow-2xl shadow-shadow/60 sm:w-[290px]"
       >
         <video
           ref={ref}

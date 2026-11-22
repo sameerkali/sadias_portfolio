@@ -12,7 +12,6 @@ Search the project for `DUMMY` and `TODO` to find every spot.
 - [ ] Instagram / YouTube / TikTok links in `socials` (currently `yourhandle`)
 - [ ] Availability line: `site.availability`
 - [ ] Your domain: `site.url` (used for SEO / link previews)
-- [ ] Stats: `stats` (videos delivered, views, turnaround, clients)
 - [ ] About bio: `about.paragraphs`, `about.tools`, `about.languages`
 - [ ] Testimonials: real quotes, names and roles in `testimonials`
 - [ ] Per video: check `description`, and fill in the real `platform` and `tools` in `work`

@@ -20,7 +20,7 @@ export function Services() {
               key={s.title}
               title={s.title}
               description={s.description}
-              className={cn(spans[i], !s.image && "border-transparent bg-accent text-fg-on-accent")}
+              className={cn(spans[i], !s.image && "bg-accent text-fg-on-accent")}
               header={
                 s.image ? (
                   <div aria-hidden="true" className="absolute inset-0">

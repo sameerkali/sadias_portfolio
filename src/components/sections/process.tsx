@@ -14,7 +14,7 @@ export function Process() {
               <p className="text-2xl leading-relaxed text-fg">{step.text}</p>
               <ul className="mt-6 flex flex-wrap gap-2">
                 {step.points.map((point) => (
-                  <li key={point} className="rounded-pill border border-line px-4 py-2 text-lg text-fg-muted">
+                  <li key={point} className="rounded-pill bg-surface-raised px-4 py-2 text-lg text-fg-muted">
                     {point}
                   </li>
                 ))}

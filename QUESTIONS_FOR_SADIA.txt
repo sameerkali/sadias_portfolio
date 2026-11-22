@@ -1,0 +1,309 @@
+QUESTIONS FOR SADIA - details needed to finish the portfolio website
+=====================================================================
+
+Hi Sadia! The website is built and your 6 videos are already on it.
+Right now it uses placeholder text in many places. Please answer what you
+can below. Short answers are fine. Skip anything you don't want on the site.
+
+Where it says "Currently:", that is what the site shows now.
+
+
+---------------------------------------------------------------------
+1. ABOUT YOU
+---------------------------------------------------------------------
+
+1.1  What is your full name, exactly as it should appear on the site?
+     Currently: "Sadia Khan" (the surname is a placeholder)
+     Answer:
+
+1.2  How do you describe your job in a few words?
+     Currently: "Short-form video editor"
+     Answer:
+
+1.3  How long have you been editing videos?
+     Currently: "three years"
+     Answer:
+
+1.4  How did you start, and what kind of work do you do most now?
+     (2-4 sentences. This becomes your "Hi, I'm Sadia" section.)
+     Answer:
+
+1.5  What do you care about most when you edit? What makes your edits different?
+     Answer:
+
+1.6  Which editing apps do you use?
+     Currently: Premiere Pro, After Effects, DaVinci Resolve, CapCut, Photoshop
+     Answer:
+
+1.7  Which languages can you write captions in?
+     Currently: English, Hindi and Urdu
+     Answer:
+
+1.8  Do you want your city or country on the site? (optional)
+     Answer:
+
+
+---------------------------------------------------------------------
+2. CONTACT DETAILS
+---------------------------------------------------------------------
+
+2.1  Which email should clients use?
+     Currently: hello@sadiaedits.com (placeholder)
+     Answer:
+
+2.2  Phone number to show? (or say "don't show")
+     Answer:
+
+2.3  WhatsApp number for the WhatsApp button? (can be the same as above)
+     Answer:
+
+2.4  How do you prefer clients contact you first? (email / WhatsApp / Instagram DM)
+     Answer:
+
+2.5  How fast do you usually reply?
+     Currently: "I reply within a day"
+     Answer:
+
+2.6  Are you taking new projects right now? From when?
+     Currently: "Booking projects for December"
+     Answer:
+
+
+---------------------------------------------------------------------
+3. SOCIAL MEDIA LINKS
+---------------------------------------------------------------------
+
+Paste the full link, or write "none".
+
+3.1  Instagram:
+3.2  YouTube:
+3.3  TikTok:
+3.4  Any other? (LinkedIn, Behance, Fiverr, Upwork...):
+
+
+---------------------------------------------------------------------
+4. YOUR 6 VIDEOS
+---------------------------------------------------------------------
+
+For each video please tell us:
+  a) A short title (2-4 words)
+  b) What it is, in one sentence (e.g. "Bridal reel for a Lucknow wedding")
+  c) Client name, if it's OK to show it (or "keep private")
+  d) Where it was posted (Instagram Reels, YouTube Shorts, TikTok, WhatsApp...)
+  e) Which apps you edited it in
+  f) Any results you know (views, likes, shares, client feedback)
+  g) Is it OK to show this video publicly? (client permission and music rights)
+
+4.1  "Bride reel" (0:27)
+     Currently titled: "Bridal reel"
+     a)
+     b)
+     c)
+     d)
+     e)
+     f)
+     g)
+
+4.2  "Information reel" (0:25, the podcast clip with "Top 3 Exercises" captions)
+     Currently titled: "Podcast clip"
+     a)
+     b)
+     c)
+     d)
+     e)
+     f)
+     g)
+
+4.3  "Pre wedding edit" (0:54)
+     Currently titled: "Pre-wedding story"
+     a)
+     b)
+     c)
+     d)
+     e)
+     f)
+     g)
+
+4.4  "Wedding Card" (0:32, the invitation video with rose petals)
+     Currently titled: "Wedding invitation"
+     a)
+     b)
+     c)
+     d)
+     e)
+     f)
+     g)
+
+4.5  "Wedding" (0:15, top-down crowd and live music)
+     Currently titled: "Wedding night"
+     a)
+     b)
+     c)
+     d)
+     e)
+     f)
+     g)
+
+4.6  "Instagram Viral" (0:12, the horizontal cinematic clip shown big on the page)
+     Currently: "A 12-second cut with speed ramps, a moody grade and sound design"
+     a)
+     b)
+     c)
+     d)
+     e)
+     f)  Did it actually go viral? How many views?
+     g)
+
+4.7  Which ONE video is your best? (It plays first, at the top of the page.)
+     Currently: the Bride reel
+     Answer:
+
+4.8  Do you have more videos you want to add? If yes, share a Drive link.
+     Answer:
+
+
+---------------------------------------------------------------------
+5. SERVICES
+---------------------------------------------------------------------
+
+The site lists 4 services right now:
+  - Wedding and event reels
+  - Podcast and talking-head clips
+  - Digital invitations
+  - Shorts and TikTok repurposing (one long video into many short ones)
+
+5.1  Are these right? Anything to add, remove or rename?
+     Answer:
+
+5.2  Any type of work you DON'T want to get asked for?
+     Answer:
+
+5.3  Do you want prices on the site? (yes with prices / "starting from" / no)
+     If yes, list them:
+     Answer:
+
+
+---------------------------------------------------------------------
+6. HOW YOU WORK
+---------------------------------------------------------------------
+
+The site shows 4 steps: Brief, First cut, Polish, Delivery.
+
+6.1  How do clients send you footage? (Google Drive, WeTransfer, WhatsApp...)
+     Answer:
+
+6.2  What do you need from a client before you start?
+     Answer:
+
+6.3  How long does a typical reel take you?
+     Currently: "usually within 48 hours"
+     Answer:
+
+6.4  How many rounds of changes do you include?
+     Currently: "up to two rounds"
+     Answer:
+
+6.5  What do you deliver at the end? (9:16 file, 1:1 file, thumbnail, project files...)
+     Answer:
+
+6.6  Do you send a watermarked draft first?
+     Answer:
+
+
+---------------------------------------------------------------------
+7. TESTIMONIALS (what clients say)
+---------------------------------------------------------------------
+
+The current quotes are made up. We need real ones.
+For each client, please send:
+  - What they said (1-2 sentences is perfect)
+  - Their name
+  - Their role or business (e.g. "Wedding photographer, Studio Noor")
+  - Is it OK to show their name? (yes / first name only / no)
+
+Screenshots of WhatsApp or Instagram messages are fine too.
+
+7.1  Client 1:
+7.2  Client 2:
+7.3  Client 3:
+7.4  Client 4 (optional):
+7.5  Client 5 (optional):
+
+
+---------------------------------------------------------------------
+8. NUMBERS (optional)
+---------------------------------------------------------------------
+
+We removed the numbers section for now. If you have real numbers, we can
+bring it back:
+
+8.1  Roughly how many videos have you edited?
+8.2  Total views on videos you edited (approx.)?
+8.3  How many clients or creators have you worked with?
+
+
+---------------------------------------------------------------------
+9. PHOTOS AND FILES
+---------------------------------------------------------------------
+
+9.1  A photo of you for the About section.
+     Portrait (taller than wide), good light, at least 1200 x 1500 px.
+     Send:
+
+9.2  Do you have a logo? If yes, send it (PNG or SVG). If no, the site just shows "Sadia."
+     Send:
+
+9.3  Any custom thumbnails for your videos? (optional; right now we use a frame from each video)
+     Send:
+
+9.4  Logos of brands or clients you worked with, if it's OK to show them (optional)
+     Send:
+
+
+---------------------------------------------------------------------
+10. LOOK AND FEEL
+---------------------------------------------------------------------
+
+10.1 The site uses purple and cyan, with light and dark mode. Do you like these colors?
+     If not, which colors feel like "you"?
+     Answer:
+
+10.2 Should the site open in light or dark mode by default?
+     (Right now it follows the visitor's phone/computer setting.)
+     Answer:
+
+10.3 The main button says "Hire me". Is that OK, or prefer something like
+     "Let's work together" / "Book a project"?
+     Answer:
+
+10.4 Any editor or creator websites you like the look of? (links)
+     Answer:
+
+
+---------------------------------------------------------------------
+11. WEBSITE ADDRESS
+---------------------------------------------------------------------
+
+11.1 Do you already own a domain (like sadiaedits.com)? Which one?
+     Answer:
+
+11.2 If not, any names you'd like? (we can check what's available)
+     Answer:
+
+11.3 Who should the website be found by on Google? (e.g. "wedding reel editor in
+     Lucknow", "podcast clip editor", clients in India / abroad)
+     Answer:
+
+
+---------------------------------------------------------------------
+12. ANYTHING ELSE
+---------------------------------------------------------------------
+
+12.1 Anything you want on the site that isn't there?
+     Answer:
+
+12.2 Anything on the site you want removed?
+     Answer:
+
+
+Thank you!

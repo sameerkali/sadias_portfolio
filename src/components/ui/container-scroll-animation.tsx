@@ -36,7 +36,7 @@ export const ContainerScroll = ({
         </motion.div>
         <motion.div
           style={{ rotateX: rotate, scale }}
-          className="mx-auto -mt-12 aspect-video w-full max-w-5xl rounded-[30px] border-4 border-fg-subtle bg-surface-raised p-2 shadow-2xl shadow-black md:p-4"
+          className="mx-auto -mt-12 aspect-video w-full max-w-5xl rounded-[30px] bg-surface-raised p-2 shadow-2xl shadow-shadow/60 md:p-4"
         >
           <div className="h-full w-full overflow-hidden rounded-2xl bg-surface-muted">{children}</div>
         </motion.div>

@@ -5,7 +5,7 @@ import { contact, ctaLabel, site, socials } from "@/data/site";
 // No form on purpose: the site is 100% static, so contact goes through email / WhatsApp links.
 export function Contact() {
   return (
-    <section id="contact" aria-labelledby="contact-title" className="relative scroll-mt-8 overflow-hidden border-t border-line">
+    <section id="contact" aria-labelledby="contact-title" className="relative scroll-mt-8 overflow-hidden">
       <BackgroundBeams />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center px-6 py-32 text-center md:py-40">
         <h2 id="contact-title" className="text-display font-semibold tracking-tight">
@@ -35,7 +35,7 @@ export function Contact() {
                 href={href}
                 aria-label={label}
                 {...(href.startsWith("http") && { target: "_blank", rel: "noopener noreferrer" })}
-                className="flex h-12 w-12 items-center justify-center rounded-full border border-line text-fg transition hover:-translate-y-0.5 hover:border-accent hover:text-accent"
+                className="flex h-12 w-12 items-center justify-center rounded-full bg-surface-raised text-fg transition hover:-translate-y-0.5 hover:bg-accent-2 hover:text-fg-on-accent"
               >
                 <Icon aria-hidden="true" stroke={1.5} className="h-5 w-5" />
               </a>

@@ -18,7 +18,7 @@ export function Hero() {
 
       <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-14 px-6 pt-28 pb-16 md:grid-cols-[1.15fr_1fr] md:pt-24">
         <div>
-          <p className="mb-6 text-md font-semibold tracking-[0.18em] text-accent uppercase">{hero.eyebrow}</p>
+          <p className="mb-6 text-md font-semibold tracking-[0.18em] text-accent-2 uppercase">{hero.eyebrow}</p>
           <h1 className="text-display font-semibold tracking-tight">
             <span className="sr-only">
               {hero.flipWords.join(", ")} {hero.headlineRest}

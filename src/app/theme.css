@@ -2,13 +2,18 @@
   ============================================================
   COLOR SCHEME: the only place colors are defined.
   Change a value here and it updates everywhere on the site
-  (text, backgrounds, buttons, borders, spotlight, beams, focus ring).
+  (text, backgrounds, buttons, shadows, spotlight, beams, focus ring).
 
-  To switch schemes: comment out the active @theme block and
-  uncomment another one. Every scheme uses the same 8 names.
+  Every scheme has two halves with the same 10 names:
+    @theme { ... }       dark mode (the default)
+    html.light { ... }   light mode (used when the visitor picks light,
+                         or their device is set to light)
 
-  Contrast rule: fg-muted on surface, accent on surface, and
-  fg-on-accent on accent must each stay at 4.5:1 or more
+  To switch schemes: comment out BOTH halves of the active scheme
+  and uncomment both halves of another one.
+
+  Contrast rule (both modes): fg-muted, accent and accent-2 on every
+  surface, and fg-on-accent on both accents, must stay at 4.5:1 or more
   (check at https://webaim.org/resources/contrastchecker/).
   ============================================================
 */
@@ -22,22 +27,53 @@
   --color-fg-muted: oklch(0.69 0.012 148);
   --color-fg-subtle: #6e6a64;
   --color-accent: oklch(0.88 0.18 96);
+  --color-accent-2: oklch(0.88 0.18 96);
   --color-fg-on-accent: #1a1a1c;
+  --color-shadow: #000000;
+}
+html.light {
+  --color-surface: #fafafa;
+  --color-surface-muted: #f1f1f0;
+  --color-surface-raised: #e6e6e4;
+  --color-fg: #1a1a1c;
+  --color-fg-muted: #4f4c47;
+  --color-fg-subtle: #a8a49b;
+  --color-accent: #7a5c00;
+  --color-accent-2: #7a5c00;
+  --color-fg-on-accent: #ffffff;
+  --color-shadow: #3a3528;
 }
 */
 
-/* ---------- Scheme: Purple (ACTIVE) ----------
-   Creative and premium. Bright lavender accent on violet-tinted near-black,
-   kept light enough that the purple doesn't feel heavy. */
+/* ---------- Scheme: Purple + cyan (ACTIVE) ----------
+   Creative and premium. Kept light enough that the purple doesn't feel heavy. */
+
+/* Dark mode */
 @theme {
   --color-surface: #0b0614; /* page background */
   --color-surface-muted: #120c1c; /* alternate section background */
   --color-surface-raised: #1e152c; /* cards, pills, popup */
   --color-fg: #f3f0f9; /* main text */
   --color-fg-muted: #bab3cb; /* secondary text */
-  --color-fg-subtle: #6d6382; /* decorative only (frames, placeholder borders) */
+  --color-fg-subtle: #6d6382; /* decorative only (timeline dots) */
   --color-accent: #be85f9; /* brand color: buttons, highlights, focus ring */
-  --color-fg-on-accent: #1b0e2d; /* text on top of the accent color */
+  --color-accent-2: #00e5ff; /* second brand color (cyan): gradients, labels, hover states */
+  --color-fg-on-accent: #1b0e2d; /* text on top of either accent */
+  --color-shadow: #000000; /* drop shadows */
+}
+
+/* Light mode. #00e5ff is too light to read on white, so cyan is deepened here. */
+html.light {
+  --color-surface: #faf8fd;
+  --color-surface-muted: #f2edf9;
+  --color-surface-raised: #e9e2f5;
+  --color-fg: #1b1027;
+  --color-fg-muted: #544866;
+  --color-fg-subtle: #a59bb8;
+  --color-accent: #7333e6;
+  --color-accent-2: #0b6b86;
+  --color-fg-on-accent: #ffffff;
+  --color-shadow: #3b2a55;
 }
 
 /* Derived from the colors above, no need to edit. */

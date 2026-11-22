@@ -24,7 +24,7 @@ export const BentoGridItem = ({
   return (
     <li
       className={cn(
-        "group/bento relative row-span-1 flex min-h-64 flex-col justify-end overflow-hidden rounded-2xl border border-line bg-surface-raised p-6",
+        "group/bento relative row-span-1 flex min-h-64 flex-col justify-end overflow-hidden rounded-2xl bg-surface-raised p-6",
         className,
       )}
     >

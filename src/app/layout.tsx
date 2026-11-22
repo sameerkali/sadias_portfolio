@@ -18,9 +18,15 @@ export const metadata: Metadata = {
   // openGraph: { images: ["/og.jpg"] },
 };
 
+// Runs before paint: saved choice wins, otherwise follow the device setting. Prevents a theme flash.
+const themeScript = `(function(){try{var t=localStorage.getItem("theme");if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";var c=document.documentElement.classList;c.remove("dark","light");c.add(t)}catch(e){}})()`;
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${tasa.variable} dark antialiased`}>
+    <html lang="en" className={`${tasa.variable} dark antialiased`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="bg-surface font-sans text-fg">
         <a
           href="#main"

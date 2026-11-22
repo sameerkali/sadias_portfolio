@@ -116,7 +116,7 @@ export const BackgroundBeams = React.memo(
                 }}
               >
                 <stop style={{ stopColor: "var(--color-accent)" }} stopOpacity="0"></stop>
-                <stop style={{ stopColor: "var(--color-accent)" }}></stop>
+                <stop style={{ stopColor: "var(--color-accent-2)" }}></stop>
                 <stop offset="32.5%" style={{ stopColor: "var(--color-accent)" }}></stop>
                 <stop offset="100%" style={{ stopColor: "var(--color-accent)" }} stopOpacity="0"></stop>
               </motion.linearGradient>

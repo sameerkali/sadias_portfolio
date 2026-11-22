@@ -20,7 +20,7 @@ src/
   app/
     page.tsx              ← page order: which sections show, top to bottom
     layout.tsx            ← font, page title / SEO
-    theme.css             ← COLOR SCHEME. Change colors here, the whole site follows.
+    theme.css             ← COLOR SCHEME (dark + light). Change colors here, the whole site follows.
     globals.css           ← other design tokens (font sizes, radius, durations)
   components/
     sections/             ← one file per page section (hero, work, services, ...)
@@ -40,8 +40,9 @@ SKILL.md                  ← the design system this site follows
 | Work grid and video popup | Expandable Card |
 | Services | Bento Grid |
 | Process | Timeline |
-| Testimonials | Infinite Moving Cards |
+| Testimonials | Card Stack |
 | Contact background | Background Beams |
+| Floating contact button | Custom (Motion + CSS animations) |
 
 ## Adding a video
 
@@ -60,5 +61,5 @@ The work grid is laid out for 5 reels on desktop. With more, they wrap to a new 
 ## Design rules (from SKILL.md)
 
 - Colors, sizes and radii come from tokens in `globals.css` (`bg-surface`, `text-fg`, `text-accent`, `rounded-pill`...). Don't use raw hex in components.
-- Dark theme, colors from `src/app/theme.css` (purple active, original yellow kept commented), TASA Orbiter font.
+- Light and dark mode: follows the visitor's device, toggle in the top-right remembers their choice. Colors from `src/app/theme.css` (purple + cyan active, original yellow kept commented), TASA Orbiter font.
 - Every interactive element has a visible accent-colored focus ring. All animations respect the OS "reduce motion" setting.

@@ -24,7 +24,7 @@ export const site = {
   availability: "Booking projects for December", // DUMMY
 };
 
-// Label of the email button in the Contact section.
+// Label of the floating contact button and the email button in the Contact section.
 export const ctaLabel = "Hire me";
 
 export const socials = [
@@ -43,14 +43,6 @@ export const hero = {
     "I'm Sadia, a short-form editor. I turn raw footage into wedding reels, podcast clips and brand shorts built for retention.",
 };
 
-// DUMMY numbers. Replace with your real ones (or delete the section in page.tsx).
-export const stats = [
-  { value: "120+", label: "Videos delivered" },
-  { value: "18M+", label: "Views on client posts" },
-  { value: "48h", label: "Typical turnaround" },
-  { value: "35", label: "Creators and brands" },
-];
-
 // Section headings that aren't covered further down.
 export const sections = {
   work: {
@@ -59,7 +51,10 @@ export const sections = {
     text: "Open any reel to watch it with sound.",
   },
   services: { title: "What I edit" },
-  testimonials: { title: "What clients say" },
+  testimonials: {
+    title: "What clients say",
+    text: "Photographers, podcasters and brands I've edited for.",
+  },
 };
 
 /* ---------------- Videos (files live in /public/videos) ---------------- */

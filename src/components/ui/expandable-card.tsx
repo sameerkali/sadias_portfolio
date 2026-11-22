@@ -66,7 +66,7 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
                     role="dialog"
                     aria-modal="true"
                     aria-labelledby={`title-${active.id}-${id}`}
-                    className="relative flex max-h-[94dvh] w-full max-w-4xl flex-col overflow-y-auto rounded-3xl border border-line bg-surface-raised md:flex-row md:overflow-hidden"
+                    className="relative flex max-h-[94dvh] w-full max-w-4xl flex-col overflow-y-auto rounded-3xl bg-surface-raised md:flex-row md:overflow-hidden"
                   >
                     <motion.div
                       layoutId={`media-${active.id}-${id}`}
@@ -83,7 +83,7 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
                     </motion.div>
 
                     <div className="flex flex-col gap-5 p-6 md:overflow-y-auto md:p-8">
-                      <p className="text-md font-semibold text-accent">{active.category}</p>
+                      <p className="text-md font-semibold text-accent-2">{active.category}</p>
                       <motion.h3
                         layoutId={`title-${active.id}-${id}`}
                         id={`title-${active.id}-${id}`}
@@ -99,7 +99,7 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
                       >
                         {active.description}
                       </motion.p>
-                      <dl className="mt-auto grid grid-cols-2 gap-x-6 gap-y-4 border-t border-line pt-5 text-md">
+                      <dl className="mt-auto grid grid-cols-2 gap-x-6 gap-y-4 pt-5 text-md">
                         <div>
                           <dt className="text-fg-muted">Length</dt>
                           <dd className="mt-1 text-lg">{active.duration}</dd>
@@ -152,12 +152,17 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
             >
               <motion.div
                 layoutId={`media-${item.id}-${id}`}
-                className="relative aspect-[9/16] overflow-hidden rounded-2xl border border-line bg-surface-raised transition-[border-color] group-hover:border-accent"
+                className="relative aspect-[9/16] overflow-hidden rounded-2xl bg-surface-raised"
               >
-                <HoverVideo src={item.src} poster={item.poster} playing={hovered === item.id} />
+                <HoverVideo
+                  src={item.src}
+                  poster={item.poster}
+                  playing={hovered === item.id}
+                  className="transition-transform duration-500 group-hover:scale-105"
+                />
                 <span
                   aria-hidden="true"
-                  className="absolute right-3 bottom-3 flex h-10 w-10 items-center justify-center rounded-full bg-accent text-fg-on-accent opacity-90 transition-transform duration-[var(--duration-slower)] group-hover:scale-110"
+                  className="absolute right-3 bottom-3 flex h-10 w-10 items-center justify-center rounded-full bg-accent text-fg-on-accent transition duration-[var(--duration-slower)] group-hover:scale-110 group-hover:bg-accent-2"
                 >
                   <IconPlayerPlayFilled className="h-4 w-4" />
                 </span>

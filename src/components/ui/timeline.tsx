@@ -50,7 +50,7 @@ export const Timeline = ({
           <li key={item.title} className="flex justify-start pt-10 md:gap-10 md:pt-32">
             <div className="sticky top-40 z-40 flex max-w-xs flex-col items-center self-start md:w-full md:flex-row lg:max-w-sm">
               <div className="absolute left-3 flex h-10 w-10 items-center justify-center rounded-full bg-surface">
-                <div className="h-4 w-4 rounded-full border border-fg-subtle bg-surface-raised" />
+                <div className="h-4 w-4 rounded-full bg-fg-subtle" />
               </div>
               <h3 className="hidden text-4xl font-bold text-fg-muted md:block md:pl-20">{item.title}</h3>
             </div>
@@ -69,7 +69,7 @@ export const Timeline = ({
         >
           <motion.div
             style={{ height: heightTransform, opacity: opacityTransform }}
-            className="absolute inset-x-0 top-0 w-0.5 rounded-full bg-linear-to-t from-accent from-0% via-accent/60 via-10% to-transparent"
+            className="absolute inset-x-0 top-0 w-0.5 rounded-full bg-linear-to-t from-accent-2 from-0% via-accent via-10% to-transparent"
           />
         </div>
       </div>
