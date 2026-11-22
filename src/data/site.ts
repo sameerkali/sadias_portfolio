@@ -70,6 +70,7 @@ export type Video = {
   category: string;
   description: string;
   src: string;
+  preview?: string; // optional small, silent version for the autoplaying hero reel
   poster: string;
   duration: string;
   platform: string; // DUMMY per video
@@ -94,6 +95,7 @@ export const work: Video[] = [
     description:
       "Mehndi close-ups, fabric textures and slow push-ins, cut to a soft track so every detail gets its moment.",
     src: "/videos/bride-reel.mp4",
+    preview: "/videos/bride-reel-preview.mp4",
     poster: "/videos/bride-reel.jpg",
     duration: "0:27",
     platform: "Instagram Reels",

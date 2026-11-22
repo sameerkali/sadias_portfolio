@@ -23,8 +23,8 @@ Search the project for `DUMMY` and `TODO` to find every spot.
 | What | Where to put it | Size | Then |
 | --- | --- | --- | --- |
 | Your photo | `public/images/sadia.jpg` | 4:5, about 1200x1500 | Swap the `<Placeholder>` in `src/components/sections/about.tsx` for `<Image>` (comment there shows how) |
-| Link preview image | `public/og.jpg` | 1200x630 | Uncomment `openGraph` in `src/app/layout.tsx` |
-| Favicon | `src/app/icon.png` (and delete `src/app/favicon.ico`) | 512x512 | Nothing, Next picks it up |
+| Link preview image | already generated from your name + tagline (`src/app/og.png/route.tsx`) | 1200x630 | Optional: delete that folder and put your own image at `public/og.png` |
+| Favicon | already added: `src/app/icon.svg`, `apple-icon.png`, `favicon.ico` | any | Optional: swap for your own logo |
 | Video thumbnails (optional) | `public/videos/<same-name>.jpg` | same ratio as video | Nothing. Current ones are frames grabbed from each video |
 
 ## 3. Optional, if you want them

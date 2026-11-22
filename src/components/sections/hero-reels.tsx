@@ -26,12 +26,14 @@ export function HeroReels({ center, left, right }: { center: Video; left: Video;
       ))}
 
       <motion.div
+        // Fades in on purpose: if the poster were visible at first paint it would become the
+        // "largest paint" and wait on the image download (much worse mobile Lighthouse score).
         initial={{ opacity: 0, y: 40, scale: 0.96 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ ...spring, delay: 0.1 }}
         className="relative z-10 mx-auto aspect-[9/16] w-[250px] overflow-hidden rounded-[30px] bg-surface-raised shadow-2xl shadow-shadow/60 sm:w-[290px]"
       >
-        <AutoplayVideo src={center.src} poster={center.poster} label={`${center.title} preview`} />
+        <AutoplayVideo src={center.preview ?? center.src} poster={center.poster} label={`${center.title} preview`} />
       </motion.div>
     </div>
   );
