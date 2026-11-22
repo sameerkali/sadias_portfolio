@@ -10,6 +10,7 @@ Next.js 16, Tailwind CSS v4, Motion, and components from [Aceternity UI](https:/
 npm install
 npm run dev      # http://localhost:3000
 npm run build    # static site in ./out (upload this folder anywhere)
+npm start        # preview the built ./out folder locally
 ```
 
 ## Where things are
@@ -50,17 +51,24 @@ SKILL.md                  ← the design system this site follows
 | Cursor | Custom viewfinder follower (`ui/editor-cursor.tsx`) |
 | Scroll animations | `ui/scroll-motion.tsx` (word reveals, rise-ins, parallax, progress bar) |
 
-## Adding a video
+## Adding a video or image
 
-1. Compress it (keeps the site fast):
+Everything already in `public/` is compressed. For new files:
+
+1. Images: save as `.avif` (for example with squoosh.app).
+2. Videos: make a 720p H.264 MP4 (plays everywhere) and an AV1 copy named `<name>-av1.mp4`
+   (about half the size; browsers that support AV1 load it first, the rest use the MP4):
 
    ```bash
    ffmpeg -i input.mp4 -vf "scale='if(gt(iw,ih),1280,720)':-2" -c:v libx264 -preset slow -crf 27 \
      -maxrate 2500k -bufsize 5000k -pix_fmt yuv420p -c:a aac -b:a 128k -movflags +faststart public/videos/my-reel.mp4
-   ffmpeg -ss 2 -i public/videos/my-reel.mp4 -frames:v 1 -q:v 4 public/videos/my-reel.jpg
+   ffmpeg -i public/videos/my-reel.mp4 -c:v libsvtav1 -preset 6 -crf 46 -pix_fmt yuv420p -c:a copy \
+     -movflags +faststart public/videos/my-reel-av1.mp4
+   ffmpeg -ss 1 -i public/videos/my-reel.mp4 -frames:v 1 poster.png   # then save it as my-reel.avif
    ```
 
-2. Add an entry to the `work` list in `src/data/site.ts` (copy an existing one).
+2. Add an entry to the `work` list in `src/data/site.ts` (copy an existing one), using
+   `src: "/videos/my-reel.mp4"` and `poster: "/videos/my-reel.avif"`.
 
 The work grid is laid out for 5 reels on desktop. With more, they wrap to a new row.
 

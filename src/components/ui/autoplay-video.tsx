@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { useInView, useReducedMotion } from "motion/react";
 import { IconPlayerPauseFilled, IconPlayerPlayFilled } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
+import { VideoSources } from "@/components/ui/video-sources";
 
 // Muted looping video with no timeline/controls, just a small play/pause button
 // (an autoplaying video must be pausable, WCAG 2.2.2).
@@ -44,7 +45,6 @@ export function AutoplayVideo({
     <div className={cn("relative h-full w-full", className)}>
       <video
         ref={ref}
-        src={src}
         poster={poster}
         muted
         loop
@@ -54,7 +54,9 @@ export function AutoplayVideo({
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
         className="h-full w-full object-cover"
-      />
+      >
+        <VideoSources src={src} />
+      </video>
       <button
         type="button"
         onClick={toggle}

@@ -98,7 +98,7 @@ export const featured = {
   description:
     "A 12-second cut with speed ramps, a moody grade and sound design doing the storytelling.",
   src: "/videos/instagram-viral.mp4",
-  poster: "/videos/instagram-viral.jpg",
+  poster: "/videos/instagram-viral.avif",
 };
 
 // The vertical reels, shown in the work grid. Order here = order on the page.
@@ -111,7 +111,7 @@ export const work: Video[] = [
       "Mehndi close-ups, fabric textures and slow push-ins, cut to a soft track so every detail gets its moment.",
     src: "/videos/bride-reel.mp4",
     preview: "/videos/bride-reel-preview.mp4",
-    poster: "/videos/bride-reel.jpg",
+    poster: "/videos/bride-reel.avif",
     duration: "0:27",
     platform: "Instagram Reels",
     tools: "Premiere Pro, After Effects",
@@ -123,7 +123,7 @@ export const work: Video[] = [
     description:
       "A long podcast turned into a punchy clip: hook in the first two seconds, bold captions and B-roll cutaways.",
     src: "/videos/information-reel.mp4",
-    poster: "/videos/information-reel.jpg",
+    poster: "/videos/information-reel.avif",
     duration: "0:25",
     platform: "Instagram Reels, YouTube Shorts",
     tools: "Premiere Pro, CapCut",
@@ -135,7 +135,7 @@ export const work: Video[] = [
     description:
       "A warm, slow-paced pre-wedding story with a soft grade and gentle speed ramps between moments.",
     src: "/videos/pre-wedding.mp4",
-    poster: "/videos/pre-wedding.jpg",
+    poster: "/videos/pre-wedding.avif",
     duration: "0:54",
     platform: "Instagram Reels",
     tools: "Premiere Pro, DaVinci Resolve",
@@ -147,7 +147,7 @@ export const work: Video[] = [
     description:
       "A digital wedding card with rose petals and card close-ups, timed so names and dates land on the beat.",
     src: "/videos/wedding-card.mp4",
-    poster: "/videos/wedding-card.jpg",
+    poster: "/videos/wedding-card.avif",
     duration: "0:32",
     platform: "WhatsApp, Instagram",
     tools: "After Effects, Premiere Pro",
@@ -159,7 +159,7 @@ export const work: Video[] = [
     description:
       "Top-down crowd shots, live music and quick cuts that keep the energy of the night intact.",
     src: "/videos/wedding.mp4",
-    poster: "/videos/wedding.jpg",
+    poster: "/videos/wedding.avif",
     duration: "0:15",
     platform: "Instagram Reels, TikTok",
     tools: "Premiere Pro",
@@ -172,17 +172,17 @@ export const services = [
   {
     title: "Wedding and Event Reels",
     description: "Weddings, engagements and celebrations cut into reels families love to share.",
-    image: "/videos/bride-reel.jpg",
+    image: "/videos/bride-reel.avif",
   },
   {
     title: "Podcast and Talking-Head Editing",
     description: "Long recordings trimmed into punchy clips with clean cuts and well-timed captions.",
-    image: "/videos/information-reel.jpg",
+    image: "/videos/information-reel.avif",
   },
   {
     title: "Digital Wedding Invitations",
     description: "Video invitations with your names, dates and details, ready to send on WhatsApp.",
-    image: "/videos/wedding-card.jpg",
+    image: "/videos/wedding-card.avif",
   },
   {
     title: "Instagram Reels and YouTube Shorts",
@@ -192,12 +192,12 @@ export const services = [
   {
     title: "Cinematic Video Editing",
     description: "Colour grading, smooth transitions and sound that make footage feel like film.",
-    image: "/videos/instagram-viral.jpg",
+    image: "/videos/instagram-viral.avif",
   },
   {
     title: "Social Media Short-form Content",
     description: "Regular short videos for creators and brands, edited to match your style.",
-    image: "/videos/pre-wedding.jpg",
+    image: "/videos/pre-wedding.avif",
   },
 ];
 

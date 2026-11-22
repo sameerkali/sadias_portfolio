@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { IconPlayerPlayFilled, IconX } from "@tabler/icons-react";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { HoverVideo } from "@/components/ui/hover-video";
+import { VideoSources } from "@/components/ui/video-sources";
 import type { Video } from "@/data/site";
 
 const noop = () => () => {};
@@ -73,13 +74,14 @@ export function ExpandableVideoGrid({ items }: { items: Video[] }) {
                       className="mx-auto aspect-[9/16] h-[64dvh] shrink-0 overflow-hidden bg-surface md:h-[86dvh]"
                     >
                       <video
-                        src={active.src}
                         poster={active.poster}
                         controls
                         autoPlay
                         playsInline
                         className="h-full w-full object-contain"
-                      />
+                      >
+                        <VideoSources src={active.src} />
+                      </video>
                     </motion.div>
 
                     <div className="flex flex-col gap-5 p-6 md:overflow-y-auto md:p-8">

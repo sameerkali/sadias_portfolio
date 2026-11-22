@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
+import { VideoSources } from "@/components/ui/video-sources";
 
 // Muted preview that plays only while `playing` is true (hover / keyboard focus).
 // preload="none": nothing downloads until someone actually hovers.
@@ -31,7 +32,6 @@ export function HoverVideo({
   return (
     <video
       ref={ref}
-      src={src}
       poster={poster}
       muted
       loop
@@ -40,6 +40,8 @@ export function HoverVideo({
       aria-hidden="true"
       tabIndex={-1}
       className={cn("h-full w-full object-cover", className)}
-    />
+    >
+      <VideoSources src={src} />
+    </video>
   );
 }

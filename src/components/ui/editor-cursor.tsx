@@ -70,9 +70,14 @@ function Viewfinder() {
     };
   }, [x, y]);
 
-  // Writes the timecode straight to the DOM each frame (no React re-render).
+  // Writes the timecode straight to the DOM (no React re-render), only while the cursor is
+  // shown and only when the 25 fps frame number changes.
+  const lastFrame = useRef(-1);
   useAnimationFrame((t) => {
-    if (tcRef.current) tcRef.current.textContent = timecode(t);
+    const frame = Math.floor(t / 40);
+    if (!visible || !tcRef.current || frame === lastFrame.current) return;
+    lastFrame.current = frame;
+    tcRef.current.textContent = timecode(t);
   });
 
   const size = SIZE[mode];

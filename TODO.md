@@ -21,7 +21,7 @@ Search the project for `DUMMY` and `TODO` to find each one. Most edits are in
 | Your photo | `public/images/sadia.jpg` | 4:5, about 1200x1500 | Swap the `<Placeholder>` in `src/components/sections/about.tsx` for `<Image>` |
 | Link preview image | already generated from your name + tagline (`src/app/og.png/route.tsx`) | 1200x630 | Optional: delete that folder and put your own image at `public/og.png` |
 | Favicon | already added: `src/app/icon.svg`, `apple-icon.png`, `favicon.ico` | any | Optional: swap for your own logo |
-| Video thumbnails (optional) | `public/videos/<same-name>.jpg` | same ratio as video | Nothing. Current ones are frames grabbed from each video |
+| Video thumbnails (optional) | `public/videos/<same-name>.jpg` | same ratio as video | Save it as `<same-name>.avif` |
 
 ## 3. Optional
 

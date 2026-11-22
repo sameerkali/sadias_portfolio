@@ -1,12 +1,17 @@
 "use client";
 // Aceternity UI: Background Beams (https://ui.aceternity.com/components/background-beams)
-// Adapted: colors come from theme.css, decorative only.
-import React from "react";
-import { motion } from "motion/react";
+// Adapted: colors come from theme.css, decorative only. The 50 gradient animations run
+// only while the section is on screen and never under "reduce motion" (they're JS-driven).
+import React, { useRef } from "react";
+import { motion, useInView, useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 export const BackgroundBeams = React.memo(
   ({ className }: { className?: string }) => {
+    const ref = useRef<HTMLDivElement>(null);
+    const inView = useInView(ref);
+    const reduce = useReducedMotion();
+    const active = inView && !reduce;
     const paths = [
       "M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875",
       "M-373 -197C-373 -197 -305 208 159 335C623 462 691 867 691 867",
@@ -59,8 +64,17 @@ export const BackgroundBeams = React.memo(
       "M-44 -573C-44 -573 24 -168 488 -41C952 86 1020 491 1020 491",
       "M-37 -581C-37 -581 31 -176 495 -49C959 78 1027 483 1027 483",
     ];
+    const stops = (
+      <>
+        <stop style={{ stopColor: "var(--color-accent)" }} stopOpacity="0"></stop>
+        <stop style={{ stopColor: "var(--color-accent-2)" }}></stop>
+        <stop offset="32.5%" style={{ stopColor: "var(--color-accent)" }}></stop>
+        <stop offset="100%" style={{ stopColor: "var(--color-accent)" }} stopOpacity="0"></stop>
+      </>
+    );
     return (
       <div
+        ref={ref}
         aria-hidden="true"
         className={cn(
           "pointer-events-none absolute inset-0 flex h-full w-full items-center justify-center",
@@ -92,35 +106,39 @@ export const BackgroundBeams = React.memo(
             ></motion.path>
           ))}
           <defs>
-            {paths.map((path, index) => (
-              <motion.linearGradient
-                id={`linearGradient-${index}`}
-                key={`gradient-${index}`}
-                initial={{
-                  x1: "0%",
-                  x2: "0%",
-                  y1: "0%",
-                  y2: "0%",
-                }}
-                animate={{
-                  x1: ["0%", "100%"],
-                  x2: ["0%", "95%"],
-                  y1: ["0%", "100%"],
-                  y2: ["0%", `${93 + Math.random() * 8}%`],
-                }}
-                transition={{
-                  duration: Math.random() * 10 + 10,
-                  ease: "easeInOut",
-                  repeat: Infinity,
-                  delay: Math.random() * 10,
-                }}
-              >
-                <stop style={{ stopColor: "var(--color-accent)" }} stopOpacity="0"></stop>
-                <stop style={{ stopColor: "var(--color-accent-2)" }}></stop>
-                <stop offset="32.5%" style={{ stopColor: "var(--color-accent)" }}></stop>
-                <stop offset="100%" style={{ stopColor: "var(--color-accent)" }} stopOpacity="0"></stop>
-              </motion.linearGradient>
-            ))}
+            {paths.map((path, index) =>
+              active ? (
+                <motion.linearGradient
+                  id={`linearGradient-${index}`}
+                  key={`gradient-${index}`}
+                  initial={{
+                    x1: "0%",
+                    x2: "0%",
+                    y1: "0%",
+                    y2: "0%",
+                  }}
+                  animate={{
+                    x1: ["0%", "100%"],
+                    x2: ["0%", "95%"],
+                    y1: ["0%", "100%"],
+                    y2: ["0%", `${93 + Math.random() * 8}%`],
+                  }}
+                  transition={{
+                    duration: Math.random() * 10 + 10,
+                    ease: "easeInOut",
+                    repeat: Infinity,
+                    delay: Math.random() * 10,
+                  }}
+                >
+                  {stops}
+                </motion.linearGradient>
+              ) : (
+                // static, invisible beam (same as the animation's first frame)
+                <linearGradient id={`linearGradient-${index}`} key={`gradient-${index}`} x1="0%" x2="0%" y1="0%" y2="0%">
+                  {stops}
+                </linearGradient>
+              )
+            )}
 
             <radialGradient
               id="paint0_radial_242_278"
