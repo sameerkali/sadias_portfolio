@@ -1,0 +1,46 @@
+/*
+  ============================================================
+  COLOR SCHEME: the only place colors are defined.
+  Change a value here and it updates everywhere on the site
+  (text, backgrounds, buttons, borders, spotlight, beams, focus ring).
+
+  To switch schemes: comment out the active @theme block and
+  uncomment another one. Every scheme uses the same 8 names.
+
+  Contrast rule: fg-muted on surface, accent on surface, and
+  fg-on-accent on accent must each stay at 4.5:1 or more
+  (check at https://webaim.org/resources/contrastchecker/).
+  ============================================================
+*/
+
+/* ---------- Scheme: Motion yellow (original, from SKILL.md) ----------
+@theme {
+  --color-surface: #000000;
+  --color-surface-muted: #080808;
+  --color-surface-raised: #141214;
+  --color-fg: oklch(0.94 0.008 96);
+  --color-fg-muted: oklch(0.69 0.012 148);
+  --color-fg-subtle: #6e6a64;
+  --color-accent: oklch(0.88 0.18 96);
+  --color-fg-on-accent: #1a1a1c;
+}
+*/
+
+/* ---------- Scheme: Purple (ACTIVE) ----------
+   Creative and premium. Bright lavender accent on violet-tinted near-black,
+   kept light enough that the purple doesn't feel heavy. */
+@theme {
+  --color-surface: #0b0614; /* page background */
+  --color-surface-muted: #120c1c; /* alternate section background */
+  --color-surface-raised: #1e152c; /* cards, pills, popup */
+  --color-fg: #f3f0f9; /* main text */
+  --color-fg-muted: #bab3cb; /* secondary text */
+  --color-fg-subtle: #6d6382; /* decorative only (frames, placeholder borders) */
+  --color-accent: #be85f9; /* brand color: buttons, highlights, focus ring */
+  --color-fg-on-accent: #1b0e2d; /* text on top of the accent color */
+}
+
+/* Derived from the colors above, no need to edit. */
+@theme {
+  --color-line: color-mix(in oklch, var(--color-fg) 12%, transparent);
+}

@@ -24,14 +24,7 @@ export const site = {
   availability: "Booking projects for December", // DUMMY
 };
 
-export const nav = [
-  { name: "Work", link: "#work" },
-  { name: "Services", link: "#services" },
-  { name: "Process", link: "#process" },
-  { name: "About", link: "#about" },
-];
-
-// The single "contact" call-to-action label used everywhere on the page.
+// Label of the email button in the Contact section.
 export const ctaLabel = "Hire me";
 
 export const socials = [
@@ -178,7 +171,7 @@ export const services = [
   {
     title: "Shorts and TikTok repurposing",
     description: "One long video turned into a week of Shorts, Reels and TikToks.",
-    image: null, // solid yellow tile
+    image: null, // solid accent-color tile
   },
 ];
 

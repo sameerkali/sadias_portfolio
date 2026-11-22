@@ -1,27 +1,16 @@
 @import "tailwindcss";
+/* All colors live in theme.css. Edit them there. */
+@import "./theme.css";
 
 /* Dark-only site: Aceternity's `dark:` classes always apply (<html class="dark">). */
 @custom-variant dark (&:where(.dark, .dark *));
 
 /*
-  Design tokens from SKILL.md (Motion design system).
+  Design tokens from SKILL.md (Motion design system), minus colors (see theme.css).
   Use these names in components (bg-surface, text-fg, text-accent...), never raw hex.
 */
 @theme {
   --font-sans: var(--font-tasa), sans-serif;
-
-  /* color.text.* */
-  --color-fg: oklch(0.94 0.008 96); /* primary */
-  --color-fg-muted: oklch(0.69 0.012 148); /* secondary, 7:1+ on black */
-  --color-fg-on-accent: #1a1a1c; /* tertiary, text on yellow */
-  --color-fg-subtle: #6e6a64; /* inverse, decorative only (under 4.5:1) */
-
-  /* color.surface.* */
-  --color-surface: #000000;
-  --color-surface-muted: #080808;
-  --color-surface-raised: #141214;
-  --color-accent: oklch(0.88 0.18 96); /* surface.strong, the yellow */
-  --color-line: oklch(0.94 0.008 96 / 0.12);
 
   /* font.size.* (2xs..4xl from the system, display added for hero/section titles) */
   --text-xs: 11px;

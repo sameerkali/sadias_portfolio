@@ -20,7 +20,8 @@ src/
   app/
     page.tsx              ← page order: which sections show, top to bottom
     layout.tsx            ← font, page title / SEO
-    globals.css           ← design tokens (colors, font sizes, radius, durations)
+    theme.css             ← COLOR SCHEME. Change colors here, the whole site follows.
+    globals.css           ← other design tokens (font sizes, radius, durations)
   components/
     sections/             ← one file per page section (hero, work, services, ...)
     ui/                   ← reusable pieces, mostly Aceternity components (adapted)
@@ -34,7 +35,6 @@ SKILL.md                  ← the design system this site follows
 
 | Section | Component |
 | --- | --- |
-| Top nav that reappears on scroll up | Floating Navbar |
 | Hero background and rotating word | Spotlight New, Flip Words |
 | Featured horizontal clip | Container Scroll Animation |
 | Work grid and video popup | Expandable Card |
@@ -60,6 +60,5 @@ The work grid is laid out for 5 reels on desktop. With more, they wrap to a new 
 ## Design rules (from SKILL.md)
 
 - Colors, sizes and radii come from tokens in `globals.css` (`bg-surface`, `text-fg`, `text-accent`, `rounded-pill`...). Don't use raw hex in components.
-- Dark theme only, yellow accent, TASA Orbiter font.
-- Every interactive element has a visible yellow focus ring. All animations respect the OS "reduce motion" setting.
-- One label per action: the contact button is always "Hire me" (`ctaLabel` in `site.ts`).
+- Dark theme, colors from `src/app/theme.css` (purple active, original yellow kept commented), TASA Orbiter font.
+- Every interactive element has a visible accent-colored focus ring. All animations respect the OS "reduce motion" setting.

@@ -34,7 +34,7 @@ export function Services() {
                     <div className="absolute inset-0 bg-linear-to-t from-surface via-surface/75 to-surface/10" />
                   </div>
                 ) : (
-                  // Yellow tile: the three platforms instead of an image
+                  // Accent tile: the three platforms instead of an image
                   <div aria-hidden="true" className="mb-auto flex gap-3">
                     {[IconBrandInstagram, IconBrandYoutube, IconBrandTiktok].map((Icon, j) => (
                       <Icon key={j} stroke={1.5} className="h-14 w-14 transition-transform duration-500 group-hover/bento:-rotate-6" />

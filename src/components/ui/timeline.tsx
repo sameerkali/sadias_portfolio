@@ -1,6 +1,6 @@
 "use client";
 // Aceternity UI: Timeline (https://ui.aceternity.com/components/timeline)
-// Adapted: heading via props, yellow progress line, re-measures on resize, semantic list.
+// Adapted: heading via props, accent-colored progress line, re-measures on resize, semantic list.
 import { useScroll, useTransform, motion } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 

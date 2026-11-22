@@ -1,6 +1,6 @@
 "use client";
 // Aceternity UI: Background Beams (https://ui.aceternity.com/components/background-beams)
-// Adapted: recolored to the accent yellow, decorative only.
+// Adapted: colors come from theme.css, decorative only.
 import React from "react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
@@ -130,9 +130,9 @@ export const BackgroundBeams = React.memo(
               gradientUnits="userSpaceOnUse"
               gradientTransform="translate(352 34) rotate(90) scale(555 1560.62)"
             >
-              <stop offset="0.0666667" stopColor="#d4d4d4"></stop>
-              <stop offset="0.243243" stopColor="#d4d4d4"></stop>
-              <stop offset="0.43594" stopColor="white" stopOpacity="0"></stop>
+              <stop offset="0.0666667" style={{ stopColor: "var(--color-fg)" }}></stop>
+              <stop offset="0.243243" style={{ stopColor: "var(--color-fg)" }}></stop>
+              <stop offset="0.43594" style={{ stopColor: "var(--color-fg)" }} stopOpacity="0"></stop>
             </radialGradient>
           </defs>
         </svg>
