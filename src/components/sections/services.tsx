@@ -1,26 +1,29 @@
 import Image from "next/image";
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
-import { IconBrandInstagram, IconBrandTiktok, IconBrandYoutube } from "@tabler/icons-react";
-import { RevealText } from "@/components/ui/scroll-motion";
+import { IconBrandInstagram, IconBrandYoutube } from "@tabler/icons-react";
+import { Reveal, RevealText } from "@/components/ui/scroll-motion";
 import { sections, services } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-// 4 services -> 4 cells: wide + narrow, then narrow + wide.
-const spans = ["md:col-span-2", "", "", "md:col-span-2"];
+// 6 services -> 6 cells in a zigzag: wide+narrow, narrow+wide, wide+narrow.
+const spans = ["md:col-span-2", "", "", "md:col-span-2", "md:col-span-2", ""];
 
 export function Services() {
   return (
     <section id="services" aria-labelledby="services-title" className="gradient-services scroll-mt-8 bg-surface-muted py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <RevealText id="services-title" text={sections.services.title} className="mb-12 text-display font-semibold tracking-tight" />
+        <RevealText id="services-title" text={sections.services.title} className="text-display font-semibold tracking-tight" />
+        <Reveal as="p" delay={0.15} className="mt-4 mb-12 max-w-xl text-2xl text-fg-muted">
+          {sections.services.text}
+        </Reveal>
         <BentoGrid>
           {services.map((s, i) => (
             <BentoGridItem
               key={s.title}
-              delay={i * 0.12}
+              delay={(i % 3) * 0.12}
               title={s.title}
               description={s.description}
-              className={cn(spans[i], !s.image && "bg-accent text-fg-on-accent")}
+              className={cn(spans[i % spans.length], !s.image && "bg-accent text-fg-on-accent")}
               header={
                 s.image ? (
                   <div aria-hidden="true" className="absolute inset-0">
@@ -36,7 +39,7 @@ export function Services() {
                 ) : (
                   // Accent tile: the three platforms instead of an image
                   <div aria-hidden="true" className="mb-auto flex gap-3">
-                    {[IconBrandInstagram, IconBrandYoutube, IconBrandTiktok].map((Icon, j) => (
+                    {[IconBrandInstagram, IconBrandYoutube].map((Icon, j) => (
                       <Icon key={j} stroke={1.5} className="h-14 w-14 transition-transform duration-500 group-hover/bento:-rotate-6" />
                     ))}
                   </div>

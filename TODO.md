@@ -1,36 +1,31 @@
 # What to add later
 
-Everything marked `DUMMY` in [src/data/site.ts](src/data/site.ts) is placeholder data.
-Search the project for `DUMMY` and `TODO` to find every spot.
+Real details are in. These are the spots that still need something from you.
+Search the project for `DUMMY` and `TODO` to find each one. Most edits are in
+[src/data/site.ts](src/data/site.ts).
 
-## 1. Replace dummy text (all in `src/data/site.ts`)
+## 1. Still placeholder
 
-- [ ] Full name: `site.name` (currently "Sadia Khan")
-- [ ] Email: `site.email`
-- [ ] Phone: `site.phone`
-- [ ] WhatsApp number: `site.whatsapp` (both "Hire me" buttons open this chat) and `site.whatsappMessage`
-- [ ] Instagram / YouTube / TikTok links in `socials` (currently `yourhandle`)
-- [ ] Availability line: `site.availability`
-- [ ] Your domain: `site.url` (used for SEO / link previews)
-- [ ] About bio: `about.paragraphs`, `about.tools`, `about.languages`
-- [ ] Testimonials: real quotes, names and roles in `testimonials`
-- [ ] Per video: check `description`, and fill in the real `platform` and `tools` in `work`
-- [ ] Featured clip text: `featured.title` / `featured.description`
-- [ ] Process: check the 4 steps and the "48 hours" turnaround in `process`
+- [ ] Email: `site.email` (shown in Contact and the social icons). Currently `hello@sadiaedits.com`, which only works once that domain and inbox exist.
+- [ ] Domain: `site.url` (SEO, link previews, sitemap). Not bought yet; suggested `sadiaedits.com` or `editsbysadia.com`.
+- [ ] Social links in `socials` (Instagram / YouTube / TikTok point to `yourhandle`).
+- [ ] Revisions: "up to two rounds" in `process` is waiting for confirmation.
+- [ ] Languages: add Urdu in `about.languages` if it applies.
+- [ ] Portfolio videos in `work` and `featured`: titles, descriptions, platform and tools are sample text.
+- [ ] Testimonials in `testimonials`: sample quotes, replace with real ones.
 
-## 2. Add images
+## 2. Images
 
 | What | Where to put it | Size | Then |
 | --- | --- | --- | --- |
-| Your photo | `public/images/sadia.jpg` | 4:5, about 1200x1500 | Swap the `<Placeholder>` in `src/components/sections/about.tsx` for `<Image>` (comment there shows how) |
+| Your photo | `public/images/sadia.jpg` | 4:5, about 1200x1500 | Swap the `<Placeholder>` in `src/components/sections/about.tsx` for `<Image>` |
 | Link preview image | already generated from your name + tagline (`src/app/og.png/route.tsx`) | 1200x630 | Optional: delete that folder and put your own image at `public/og.png` |
 | Favicon | already added: `src/app/icon.svg`, `apple-icon.png`, `favicon.ico` | any | Optional: swap for your own logo |
 | Video thumbnails (optional) | `public/videos/<same-name>.jpg` | same ratio as video | Nothing. Current ones are frames grabbed from each video |
 
-## 3. Optional, if you want them
+## 3. Optional
 
 - [ ] More videos: see "Adding a video" in [README.md](README.md)
-- [ ] Client / brand logos row under the stats
-- [ ] Contact form (needs a form service such as Formspree, since the site has no server)
+- [ ] Client / brand logos
 - [ ] Analytics (e.g. Vercel Analytics or Plausible)
 - [ ] Deploy: upload the `out/` folder to Netlify, Vercel or GitHub Pages

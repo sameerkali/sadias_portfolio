@@ -20,11 +20,11 @@ export function About() {
           ))}
 
           <Reveal delay={0.2}>
-            <h3 className="mt-10 text-lg font-semibold">Tools</h3>
+            <h3 className="mt-10 text-lg font-semibold">{about.skillsTitle}</h3>
             <ul className="mt-3 flex flex-wrap gap-2">
-              {about.tools.map((tool) => (
-                <li key={tool} className="rounded-pill bg-surface-raised px-4 py-2 text-lg">
-                  {tool}
+              {about.skills.map((skill) => (
+                <li key={skill} className="rounded-pill bg-surface-raised px-4 py-2 text-lg">
+                  {skill}
                 </li>
               ))}
             </ul>

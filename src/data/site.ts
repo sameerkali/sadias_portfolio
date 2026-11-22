@@ -1,7 +1,7 @@
 /**
  * ALL website content lives in this file.
  * Edit text, links and numbers here. Components only read from it.
- * Anything marked DUMMY is placeholder data: replace it (see TODO.md).
+ * Anything marked DUMMY / TODO is placeholder data: replace it (see TODO.md).
  */
 import {
   IconBrandInstagram,
@@ -12,24 +12,36 @@ import {
 } from "@tabler/icons-react";
 
 export const site = {
-  name: "Sadia Khan", // DUMMY surname
-  firstName: "Sadia",
-  role: "Short-form video editor",
-  metaTitle: "Sadia Khan | Short-form Video Editor for Reels, Shorts & TikTok",
+  name: "Sadiya Faridi",
+  firstName: "Sadia", // text logo + greetings
+  role: "Short-form Video Editor",
+  location: "Saharanpur, India",
+  // SEO: Google results + link previews
+  metaTitle: "Sadiya Faridi | Short-form Video Editor & Wedding Reel Editor",
   metaDescription:
-    "Sadia edits wedding reels, podcast clips and brand shorts for Instagram, YouTube Shorts and TikTok, built to hold attention.",
-  url: "https://sadia-portfolio.example.com", // DUMMY, your real domain
-  email: "hello@sadiaedits.com", // DUMMY
-  phone: "+91 98204 61735", // DUMMY
-  whatsapp: "919820461735", // DUMMY. Country code + number, digits only. Both "Hire me" buttons open this chat.
+    "Sadiya Faridi is a short-form video editor in India for wedding reels, cinematic edits, Instagram Reels, YouTube Shorts and social media videos.",
+  keywords: [
+    "wedding reel editor",
+    "short-form video editor",
+    "cinematic video editor",
+    "social media video editor",
+    "Instagram Reels editor",
+    "YouTube Shorts editor",
+    "wedding video editor in India",
+  ],
+  url: "https://sadiaedits.com", // TODO: domain not bought yet, change before going live
+  email: "hello@sadiaedits.com", // TODO: no email yet (placeholder on the suggested domain)
+  phone: "+91 74660 73152",
+  whatsapp: "917466073152", // country code + number, digits only. Both "Let's Work Together" buttons open this chat.
   // Pre-filled WhatsApp message. "\n" = new line. The client fills in the blanks before sending.
   whatsappMessage:
-    "Hi Sadia! I saw your portfolio and I'd like to hire you.\n\nType of video: \nNumber of videos: \nDeadline: ",
-  availability: "Booking projects for December", // DUMMY
+    "Hi Sadia! I saw your portfolio and I'd like to work together.\n\nType of video: \nFootage length: \nDeadline: ",
+  replyTime: "I usually reply within 24 hours.",
+  availability: "Currently open to new projects.",
 };
 
 // Label of the floating button and the Contact-section button. Both open WhatsApp.
-export const ctaLabel = "Hire me";
+export const ctaLabel = "Let’s Work Together";
 export const hireUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(site.whatsappMessage)}`;
 
 export const socials = [
@@ -41,11 +53,11 @@ export const socials = [
 ];
 
 export const hero = {
-  eyebrow: "Short-form video editor",
-  flipWords: ["Reels", "Shorts", "TikToks"],
+  eyebrow: "Short-form Video Editor",
+  flipWords: ["Reels", "Shorts", "Edits"],
   headlineRest: "people watch till the end.",
   subtext:
-    "I'm Sadia, a short-form editor. I turn raw footage into wedding reels, podcast clips and brand shorts built for retention.",
+    "I'm Sadia. I turn raw footage into wedding reels, cinematic edits and social media videos that capture attention and tell a story.",
 };
 
 // Section headings that aren't covered further down.
@@ -55,7 +67,10 @@ export const sections = {
     hoverHint: "Hover to preview.", // desktop only
     text: "Open any reel to watch it with sound.",
   },
-  services: { title: "What I edit" },
+  services: {
+    title: "Video editing services",
+    text: "Pricing depends on the type, length and requirements of each project.",
+  },
   testimonials: {
     title: "What clients say",
     text: "Photographers, podcasters and brands I've edited for.",
@@ -151,57 +166,66 @@ export const work: Video[] = [
   },
 ];
 
-/* ---------------- Services (bento grid, exactly 4 cells) ---------------- */
+/* ---------------- Services (bento grid, one cell per service) ---------------- */
 
 export const services = [
   {
-    title: "Wedding and event reels",
-    description:
-      "Bridal, pre-wedding and event highlights cut into vertical stories families share for years.",
+    title: "Wedding and Event Reels",
+    description: "Weddings, engagements and celebrations cut into reels families love to share.",
     image: "/videos/bride-reel.jpg",
   },
   {
-    title: "Podcast and talking-head clips",
-    description: "Hooks, jump cuts, B-roll and captions in English, Hindi or Hinglish.",
+    title: "Podcast and Talking-Head Editing",
+    description: "Long recordings trimmed into punchy clips with clean cuts and well-timed captions.",
     image: "/videos/information-reel.jpg",
   },
   {
-    title: "Digital invitations",
-    description: "Animated wedding and event invites, ready to send on WhatsApp and Instagram.",
+    title: "Digital Wedding Invitations",
+    description: "Video invitations with your names, dates and details, ready to send on WhatsApp.",
     image: "/videos/wedding-card.jpg",
   },
   {
-    title: "Shorts and TikTok repurposing",
-    description: "One long video turned into a week of Shorts, Reels and TikToks.",
-    image: null, // solid accent-color tile
+    title: "Instagram Reels and YouTube Shorts",
+    description: "Vertical edits paced for the feed, with a strong hook in the first seconds.",
+    image: null, // solid accent-color tile with platform icons
+  },
+  {
+    title: "Cinematic Video Editing",
+    description: "Colour grading, smooth transitions and sound that make footage feel like film.",
+    image: "/videos/instagram-viral.jpg",
+  },
+  {
+    title: "Social Media Short-form Content",
+    description: "Regular short videos for creators and brands, edited to match your style.",
+    image: "/videos/pre-wedding.jpg",
   },
 ];
 
 /* ---------------- Process (timeline) ---------------- */
 
 export const process = {
-  title: "How a project runs",
-  description: "From raw footage to a ready-to-post file, usually within 48 hours.", // DUMMY turnaround
+  title: "How I work",
+  description: "Usually delivered within 48 hours, depending on the project.",
   steps: [
     {
-      title: "Brief",
-      text: "You share footage, references and where it will be posted. I reply with a plan, a price and a delivery date.",
-      points: ["Google Drive or WeTransfer upload", "Reference reels you like", "Platform and length"],
+      title: "Share",
+      text: "Send your footage through Google Drive or WhatsApp, along with your project details.",
+      points: ["Raw footage", "Editing references (if available)", "Preferred editing style", "Text or captions", "Project details"],
     },
     {
-      title: "First cut",
-      text: "I build the story: the hook, the pacing and the music. You get a watermarked draft to react to.",
-      points: ["Hook in the first 2 seconds", "Music and beat sync", "Rough captions"],
+      title: "Edit",
+      text: "I shape the story with clean cuts, smooth transitions, colour grading and well-timed captions.",
+      points: ["Story and pacing", "Colour grading", "Captions"],
     },
     {
-      title: "Polish",
-      text: "Color grade, sound design, final captions and motion text. Then up to two rounds of changes.",
-      points: ["Color grade", "Sound effects and mix", "Two revision rounds"],
+      title: "Review",
+      text: "You watch the edit and share any changes you'd like. Up to two rounds of revisions are included.", // TODO: confirm revision count
+      points: ["Your feedback", "Up to two revision rounds"],
     },
     {
       title: "Delivery",
-      text: "You get export-ready files for each platform, plus a cover frame you can use as the thumbnail.",
-      points: ["9:16 and 1:1 exports", "Cover frame", "Project files on request"],
+      text: "You get high-quality MP4 videos in the aspect ratio you need, ready for social media.",
+      points: ["High-quality MP4", "Your required aspect ratio", "Ready to post"],
     },
   ],
 };
@@ -211,12 +235,12 @@ export const process = {
 export const about = {
   title: "Hi, I'm Sadia.",
   paragraphs: [
-    // DUMMY bio, write your own story here.
-    "I've been editing short-form video for three years, starting with wedding reels for photographers and growing into podcasts, creators and small brands.",
-    "I care about the first two seconds, the beat and the last frame. If people rewatch it, I did my job.",
+    "I'm a short-form video editor passionate about creating engaging and visually appealing videos. I love transforming raw footage into creative content that captures attention and tells a story.",
+    "I create wedding reels, cinematic edits, social media videos, invitations and other short-form content. My goal is to make every video feel polished, engaging and visually memorable.",
   ],
-  tools: ["Premiere Pro", "After Effects", "DaVinci Resolve", "CapCut", "Photoshop"], // DUMMY, adjust
-  languages: "Captions in English, Hindi and Urdu", // DUMMY
+  skillsTitle: "What makes my editing different",
+  skills: ["Smooth transitions", "Creative storytelling", "Clean cuts", "Cinematic visuals", "Colour grading", "Well-timed captions"],
+  languages: "Speaks Hindi and English. Based in Saharanpur, India.",
   photoAlt: "Portrait of Sadia",
 };
 
@@ -257,5 +281,5 @@ export const testimonials: Testimonial[] = [
 
 export const contact = {
   title: "Have footage sitting on your drive?",
-  text: "Send it over. I reply within a day with ideas, a price and a delivery date.",
+  text: "Send it over on WhatsApp with a few project details. I usually reply within 24 hours.",
 };

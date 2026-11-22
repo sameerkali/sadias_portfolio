@@ -4,7 +4,7 @@ import { IconBrandWhatsapp } from "@tabler/icons-react";
 import { Reveal, RevealText } from "@/components/ui/scroll-motion";
 import { contact, ctaLabel, hireUrl, site, socials } from "@/data/site";
 
-// No form on purpose: the site is 100% static, so contact goes through email / WhatsApp links.
+// No form on purpose: the site is 100% static, so contact goes through WhatsApp / email links.
 export function Contact() {
   return (
     <section id="contact" aria-labelledby="contact-title" className="gradient-contact relative scroll-mt-8 overflow-hidden">

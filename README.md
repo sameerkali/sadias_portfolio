@@ -67,7 +67,7 @@ The work grid is laid out for 5 reels on desktop. With more, they wrap to a new 
 ## Design rules (from SKILL.md)
 
 - Colors, sizes and radii come from tokens in `globals.css` (`bg-surface`, `text-fg`, `text-accent`, `rounded-pill`...). Don't use raw hex in components.
-- Light and dark mode: follows the visitor's device, toggle in the top-right remembers their choice. Colors from `src/app/theme.css` (purple + cyan active, original yellow kept commented), TASA Orbiter font.
+- Light and dark mode: opens in light mode, the toggle in the top-right switches and remembers the visitor's choice. Colors from `src/app/theme.css` (purple + cyan active, original yellow kept commented), TASA Orbiter font.
 - Every interactive element has a visible accent-colored focus ring. All animations respect the OS "reduce motion" setting.
 
 ## Lighthouse
