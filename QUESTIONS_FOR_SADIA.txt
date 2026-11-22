@@ -1,7 +1,7 @@
-QUESTIONS FOR SADIA - details needed to finish the portfolio website
+QUESTIONS FOR Sadiya - details needed to finish the portfolio website
 =====================================================================
 
-Hi Sadia! The website is built and your 6 videos are already on it.
+Hi Sadiya! The website is built and your 6 videos are already on it.
 Right now it uses placeholder text in many places. Please answer what you
 can below. Short answers are fine. Skip anything you don't want on the site.
 
@@ -13,7 +13,7 @@ Where it says "Currently:", that is what the site shows now.
 ---------------------------------------------------------------------
 
 1.1  What is your full name, exactly as it should appear on the site?
-     Currently: "Sadia Khan" (the surname is a placeholder)
+     Currently: "Sadiya Khan" (the surname is a placeholder)
      Answer:
 
 1.2  How do you describe your job in a few words?
@@ -25,7 +25,7 @@ Where it says "Currently:", that is what the site shows now.
      Answer:
 
 1.4  How did you start, and what kind of work do you do most now?
-     (2-4 sentences. This becomes your "Hi, I'm Sadia" section.)
+     (2-4 sentences. This becomes your "Hi, I'm Sadiya" section.)
      Answer:
 
 1.5  What do you care about most when you edit? What makes your edits different?
@@ -48,7 +48,7 @@ Where it says "Currently:", that is what the site shows now.
 ---------------------------------------------------------------------
 
 2.1  Which email should clients use?
-     Currently: hello@sadiaedits.com (placeholder)
+     Currently: hello@Sadiyaedits.com (placeholder)
      Answer:
 
 2.2  Phone number to show? (or say "don't show")
@@ -62,7 +62,7 @@ Where it says "Currently:", that is what the site shows now.
      Answer:
 
 2.5  When a client taps "Hire me", WhatsApp opens with this message ready to send:
-     "Hi Sadia! I'd like to hire you for a video project."  Want different wording?
+     "Hi Sadiya! I'd like to hire you for a video project."  Want different wording?
      Answer:
 
 2.6  How fast do you usually reply?
@@ -255,7 +255,7 @@ bring it back:
      Portrait (taller than wide), good light, at least 1200 x 1500 px.
      Send:
 
-9.2  Do you have a logo? If yes, send it (PNG or SVG). If no, the site just shows "Sadia."
+9.2  Do you have a logo? If yes, send it (PNG or SVG). If no, the site just shows "Sadiya."
      Send:
 
 9.3  Any custom thumbnails for your videos? (optional; right now we use a frame from each video)
@@ -289,7 +289,7 @@ bring it back:
 11. WEBSITE ADDRESS
 ---------------------------------------------------------------------
 
-11.1 Do you already own a domain (like sadiaedits.com)? Which one?
+11.1 Do you already own a domain (like Sadiyaedits.com)? Which one?
      Answer:
 
 11.2 If not, any names you'd like? (we can check what's available)

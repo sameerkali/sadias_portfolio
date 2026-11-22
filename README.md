@@ -1,4 +1,4 @@
-# Sadia's portfolio
+# Sadiya's portfolio
 
 Portfolio for a short-form video editor (Reels, YouTube Shorts, TikTok).
 Next.js 16, Tailwind CSS v4, Motion, and components from [Aceternity UI](https://ui.aceternity.com/components).

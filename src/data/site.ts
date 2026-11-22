@@ -13,7 +13,7 @@ import {
 
 export const site = {
   name: "Sadiya Faridi",
-  firstName: "Sadia", // text logo + greetings
+  firstName: "Sadiya", // text logo + greetings
   role: "Short-form Video Editor",
   location: "Saharanpur, India",
   // SEO: Google results + link previews
@@ -29,13 +29,13 @@ export const site = {
     "YouTube Shorts editor",
     "wedding video editor in India",
   ],
-  url: "https://sadiaedits.com", // TODO: domain not bought yet, change before going live
-  email: "hello@sadiaedits.com", // TODO: no email yet (placeholder on the suggested domain)
+  url: "https://Sadiyaedits.com", // TODO: domain not bought yet, change before going live
+  email: "hello@Sadiyaedits.com", // TODO: no email yet (placeholder on the suggested domain)
   phone: "+91 74660 73152",
   whatsapp: "917466073152", // country code + number, digits only. Both "Let's Work Together" buttons open this chat.
   // Pre-filled WhatsApp message. "\n" = new line. The client fills in the blanks before sending.
   whatsappMessage:
-    "Hi Sadia! I saw your portfolio and I'd like to work together.\n\nType of video: \nFootage length: \nDeadline: ",
+    "Hi Sadiya! I saw your portfolio and I'd like to work together.\n\nType of video: \nFootage length: \nDeadline: ",
   replyTime: "I usually reply within 24 hours.",
   availability: "Currently open to new projects.",
 };
@@ -57,7 +57,7 @@ export const hero = {
   flipWords: ["Reels", "Shorts", "Edits"],
   headlineRest: "people watch till the end.",
   subtext:
-    "I'm Sadia. I turn raw footage into wedding reels, cinematic edits and social media videos that capture attention and tell a story.",
+    "I'm Sadiya. I turn raw footage into wedding reels, cinematic edits and social media videos that capture attention and tell a story.",
 };
 
 // Section headings that aren't covered further down.
@@ -233,7 +233,7 @@ export const process = {
 /* ---------------- About ---------------- */
 
 export const about = {
-  title: "Hi, I'm Sadia.",
+  title: "Hi, I'm Sadiya.",
   paragraphs: [
     "I'm a short-form video editor passionate about creating engaging and visually appealing videos. I love transforming raw footage into creative content that captures attention and tells a story.",
     "I create wedding reels, cinematic edits, social media videos, invitations and other short-form content. My goal is to make every video feel polished, engaging and visually memorable.",
@@ -241,7 +241,7 @@ export const about = {
   skillsTitle: "What makes my editing different",
   skills: ["Smooth transitions", "Creative storytelling", "Clean cuts", "Cinematic visuals", "Colour grading", "Well-timed captions"],
   languages: "Speaks Hindi and English. Based in Saharanpur, India.",
-  photoAlt: "Portrait of Sadia",
+  photoAlt: "Portrait of Sadiya",
 };
 
 /* ---------------- Testimonials (DUMMY, replace with real quotes) ---------------- */
@@ -266,7 +266,7 @@ export const testimonials: Testimonial[] = [
     title: "Bride, December 2025",
   },
   {
-    quote: "Sadia understands pacing. Every Short she cut for us beat our channel average.",
+    quote: "Sadiya understands pacing. Every Short she cut for us beat our channel average.",
     name: "Nikita Bansal",
     title: "Content lead, Kesar Skincare",
   },
