@@ -29,7 +29,7 @@ export const site = {
     "YouTube Shorts editor",
     "wedding video editor in India",
   ],
-  url: "https://Sadiyaedits.com", // TODO: domain not bought yet, change before going live
+  url: "https://sadiya.expendifii.com", // live address: link previews, canonical, sitemap and robots all build from this
   email: "sadiya15232005@gmail.com", // TODO: no email yet (placeholder on the suggested domain)
   phone: "+91 74660 73152",
   whatsapp: "917466073152", // country code + number, digits only. Both "Let's Work Together" buttons open this chat.

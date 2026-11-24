@@ -7,7 +7,6 @@ Search the project for `DUMMY` and `TODO` to find each one. Most edits are in
 ## 1. Still placeholder
 
 - [ ] Email: `site.email` (shown in Contact and the social icons). Currently `hello@Sadiyaedits.com`, which only works once that domain and inbox exist.
-- [ ] Domain: `site.url` (SEO, link previews, sitemap). Not bought yet; suggested `Sadiyaedits.com` or `editsbySadiya.com`.
 - [ ] Social links in `socials` (Instagram / YouTube / TikTok point to `yourhandle`).
 - [ ] Revisions: "up to two rounds" in `process` is waiting for confirmation.
 - [ ] Languages: add Urdu in `about.languages` if it applies.
