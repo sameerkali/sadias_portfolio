@@ -22,7 +22,7 @@ const jsonLd = {
   jobTitle: site.role,
   description: site.metaDescription,
   url: site.url,
-  image: `${site.url}/og.png`,
+  image: `${site.url}/og.jpg`,
   address: { "@type": "PostalAddress", addressLocality: "Saharanpur", addressRegion: "Uttar Pradesh", addressCountry: "IN" },
   knowsLanguage: ["Hindi", "English"],
   knowsAbout: [...site.keywords, ...about.skills],

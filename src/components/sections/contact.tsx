@@ -22,8 +22,9 @@ export function Contact() {
           </ButtonLink>
 
           <p className="mt-8 text-xl">
-            <a href={`mailto:${site.email}`} className="underline decoration-line underline-offset-4 hover:decoration-accent">
+            <a href={hireUrl} target="_blank" rel="noopener noreferrer" className="underline decoration-line underline-offset-4 hover:decoration-accent">
               {site.email}
+              <span className="sr-only"> (opens WhatsApp)</span>
             </a>
             <span className="mx-3 text-fg-muted" aria-hidden="true">
               /

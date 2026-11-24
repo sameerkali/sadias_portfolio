@@ -30,7 +30,7 @@ export const site = {
     "wedding video editor in India",
   ],
   url: "https://Sadiyaedits.com", // TODO: domain not bought yet, change before going live
-  email: "hello@Sadiyaedits.com", // TODO: no email yet (placeholder on the suggested domain)
+  email: "sadiya15232005@gmail.com", // TODO: no email yet (placeholder on the suggested domain)
   phone: "+91 74660 73152",
   whatsapp: "917466073152", // country code + number, digits only. Both "Let's Work Together" buttons open this chat.
   // Pre-filled WhatsApp message. "\n" = new line. The client fills in the blanks before sending.
@@ -45,12 +45,11 @@ export const ctaLabel = "Let’s Work Together";
 export const hireUrl = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(site.whatsappMessage)}`;
 
 export const socials = [
-  { label: "Instagram", href: "https://instagram.com/yourhandle", icon: IconBrandInstagram }, // DUMMY
-  { label: "YouTube", href: "https://youtube.com/@yourhandle", icon: IconBrandYoutube }, // DUMMY
-  { label: "TikTok", href: "https://tiktok.com/@yourhandle", icon: IconBrandTiktok }, // DUMMY
+  { label: "Instagram", href: `https://wa.me/${site.whatsapp}`, icon: IconBrandInstagram }, // DUMMY
+  { label: "YouTube", href: `https://wa.me/${site.whatsapp}`, icon: IconBrandYoutube }, // DUMMY
+  { label: "TikTok", href: `https://wa.me/${site.whatsapp}`, icon: IconBrandTiktok }, // DUMMY
   { label: "WhatsApp", href: `https://wa.me/${site.whatsapp}`, icon: IconBrandWhatsapp },
-  { label: "Email", href: `mailto:${site.email}`, icon: IconMail },
-];
+  { label: "Email", href: `mailto:${site.email}`, icon: IconMail },];
 
 export const hero = {
   eyebrow: "Short-form Video Editor",
@@ -73,7 +72,7 @@ export const sections = {
   },
   testimonials: {
     title: "What clients say",
-    text: "Photographers, podcasters and brands I've edited for.",
+    text: "Brides, photographers, creators and small businesses I've edited for.",
   },
 };
 
@@ -241,39 +240,46 @@ export const about = {
   skillsTitle: "What makes my editing different",
   skills: ["Smooth transitions", "Creative storytelling", "Clean cuts", "Cinematic visuals", "Colour grading", "Well-timed captions"],
   languages: "Speaks Hindi and English. Based in Saharanpur, India.",
-  photoAlt: "Portrait of Sadiya",
 };
 
-/* ---------------- Testimonials (DUMMY, replace with real quotes) ---------------- */
+/* ---------------- Testimonials (SAMPLE reviews: replace with real client reviews before going live) ---------------- */
 
-// Add photo: "/images/clients/name.jpg" to show a photo instead of the initials tile.
-export type Testimonial = { quote: string; name: string; title: string; photo?: string };
-
-export const testimonials: Testimonial[] = [
+export const testimonials = [
   {
-    quote: "She turned four hours of wedding footage into a 30-second reel the couple posted the same night.",
-    name: "Farhan Qureshi",
-    title: "Wedding filmmaker, Frame & Vows",
+    quote:
+      "Sadiya made our nikah highlight reel so beautiful that the whole family keeps forwarding it on WhatsApp. She picked all the emotional moments and the music fit perfectly.",
+    name: "Nazia Parveen",
+    title: "Bride, Saharanpur",
   },
   {
-    quote: "Our podcast clips finally get watched past the first three seconds. The captions are spot on.",
-    name: "Arjun Mehra",
-    title: "Host, The Stronger Hour podcast",
+    quote:
+      "I wanted our wedding invitation video to look elegant, not filmy. She got it right in the first draft, changed the fonts twice when I asked and sent the final file in two days.",
+    name: "Ritika Sharma",
+    title: "Bride, Dehradun",
   },
   {
-    quote: "Fast, organised and easy to brief. The invite video was shared more than the actual card.",
-    name: "Zoya Siddiqui",
-    title: "Bride, December 2025",
+    quote:
+      "I send her raw footage from my wedding shoots and get back reels that are ready to post. Clean cuts, good colour grading and always on time. Now all my reel work goes to her.",
+    name: "Mohd. Faizan Ansari",
+    title: "Wedding photographer, Deoband",
   },
   {
-    quote: "Sadiya understands pacing. Every Short she cut for us beat our channel average.",
-    name: "Nikita Bansal",
-    title: "Content lead, Kesar Skincare",
+    quote:
+      "She turned my 45-minute podcast into short clips with proper Hindi captions. The hooks she picks are spot on, and my reels started getting more views within the first week.",
+    name: "Ankit Agarwal",
+    title: "Podcast host, Meerut",
   },
   {
-    quote: "Clear timelines, quick replies and no endless revisions. Booking her again for the next season.",
-    name: "Imran Sheikh",
-    title: "Founder, Studio Noor Photography",
+    quote:
+      "Our engagement event reel was ready the very next day. Smooth transitions, and the music was synced perfectly to every cut. Our clients loved it, we will surely work with her again.",
+    name: "Arshad Qureshi",
+    title: "Event planner, Muzaffarnagar",
+  },
+  {
+    quote:
+      "I needed regular reels for my boutique's Instagram page. Sadiya understands what my customers like and keeps the edits simple and classy. Very easy to work with on WhatsApp.",
+    name: "Pooja Saini",
+    title: "Boutique owner, Saharanpur",
   },
 ];
 

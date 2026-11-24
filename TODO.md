@@ -12,14 +12,13 @@ Search the project for `DUMMY` and `TODO` to find each one. Most edits are in
 - [ ] Revisions: "up to two rounds" in `process` is waiting for confirmation.
 - [ ] Languages: add Urdu in `about.languages` if it applies.
 - [ ] Portfolio videos in `work` and `featured`: titles, descriptions, platform and tools are sample text.
-- [ ] Testimonials in `testimonials`: sample quotes, replace with real ones.
+- [ ] Testimonials in `testimonials`: 6 sample reviews, replace with real client reviews before going live.
 
 ## 2. Images
 
 | What | Where to put it | Size | Then |
 | --- | --- | --- | --- |
-| Your photo | `public/images/Sadiya.jpg` | 4:5, about 1200x1500 | Swap the `<Placeholder>` in `src/components/sections/about.tsx` for `<Image>` |
-| Link preview image | already generated from your name + tagline (`src/app/og.png/route.tsx`) | 1200x630 | Optional: delete that folder and put your own image at `public/og.png` |
+| Link preview image | `public/og.jpg` (done) | 1200x627 JPEG, under 300 KB | To change it, replace that file (keep JPEG or PNG, not AVIF) |
 | Favicon | already added: `src/app/icon.svg`, `apple-icon.png`, `favicon.ico` | any | Optional: swap for your own logo |
 | Video thumbnails (optional) | `public/videos/<same-name>.jpg` | same ratio as video | Save it as `<same-name>.avif` |
 

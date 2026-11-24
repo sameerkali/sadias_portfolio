@@ -24,7 +24,6 @@ src/
     theme.css             ← COLOR SCHEME (dark + light). Change colors here, the whole site follows.
     globals.css           ← other design tokens (font sizes, radius, durations)
     icon.svg, apple-icon.png, favicon.ico  ← browser/phone icons
-    og.png/route.tsx      ← link-preview image, generated from site.ts at build
     robots.ts, sitemap.ts ← for Google, use site.url
   components/
     sections/             ← one file per page section (hero, work, services, ...)
@@ -46,7 +45,7 @@ SKILL.md                  ← the design system this site follows
 | Process | Timeline |
 | Contact background | Background Beams |
 | Floating contact button | Custom (Motion + CSS animations) |
-| Testimonials | Animated Testimonials |
+| Testimonials | Review cards in a masonry grid (custom) |
 | Footer | Custom editing-timeline animation (CSS) |
 | Cursor | Custom viewfinder follower (`ui/editor-cursor.tsx`) |
 | Scroll animations | `ui/scroll-motion.tsx` (word reveals, rise-ins, parallax, progress bar) |
