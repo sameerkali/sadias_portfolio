@@ -265,9 +265,9 @@ export const testimonials = [
   },
   {
     quote:
-      "She turned my 45-minute podcast into short clips with proper Hindi captions. The hooks she picks are spot on, and my reels started getting more views within the first week.",
-    name: "Ankit Agarwal",
-    title: "Podcast host, Meerut",
+      "I recorded a long tech talk and Sadiya turned it into crisp short clips for LinkedIn and YouTube Shorts. Clean cuts, easy-to-read captions and quick delivery. Exactly what I needed.",
+    name: "Sameer Faridi",
+    title: "Software engineer, Delhi",
   },
   {
     quote:
